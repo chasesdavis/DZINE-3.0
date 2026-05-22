@@ -1,0 +1,181 @@
+{
+  "file": "/Users/chase/Documents/DZINE 3.0/website/index.html",
+  "target": "http://127.0.0.1:6200",
+  "score": 100,
+  "passed": true,
+  "findings": [],
+  "screenshots": [
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/home/screenshots/mobile.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/home/screenshots/tablet.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/home/screenshots/desktop.png"
+  ],
+  "checks": {
+    "visual": {
+      "mobile": {
+        "width": 390,
+        "height": 844,
+        "horizontalOverflow": false,
+        "textCount": 60,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 12,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 66.3,
+            "text": "Source files agents can see. Interfaces people can trust."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "A design manual, runtime contract, and QA target in the same artifact."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Exportable taste, not screenshots of taste."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Author page sources. Generate routes. Audit the full website."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Examples become contracts instead of decoration."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "The system names weak patterns before they ship."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "This website is generated with D-ZINE itself."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "One design system. Many generated pages."
+          }
+        ]
+      },
+      "tablet": {
+        "width": 834,
+        "height": 1112,
+        "horizontalOverflow": false,
+        "textCount": 60,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 12,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 64.218,
+            "text": "Source files agents can see. Interfaces people can trust."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "A design manual, runtime contract, and QA target in the same artifact."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Exportable taste, not screenshots of taste."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Author page sources. Generate routes. Audit the full website."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Examples become contracts instead of decoration."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "The system names weak patterns before they ship."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "This website is generated with D-ZINE itself."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "One design system. Many generated pages."
+          }
+        ]
+      },
+      "desktop": {
+        "width": 1440,
+        "height": 1000,
+        "horizontalOverflow": false,
+        "textCount": 60,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 12,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 110.88,
+            "text": "Source files agents can see. Interfaces people can trust."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "A design manual, runtime contract, and QA target in the same artifact."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Exportable taste, not screenshots of taste."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Author page sources. Generate routes. Audit the full website."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Examples become contracts instead of decoration."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "The system names weak patterns before they ship."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "This website is generated with D-ZINE itself."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "One design system. Many generated pages."
+          }
+        ]
+      },
+      "reducedMotion": {
+        "declared": true
+      }
+    }
+  },
+  "recommendations": [
+    "ship"
+  ]
+}

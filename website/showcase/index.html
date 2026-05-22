@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-dzine-version="3.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Proof that D-ZINE can render, compile, export, screenshot, and audit itself." />
+    <meta property="og:title" content="D-ZINE Showcase" />
+    <meta property="og:description" content="Proof that D-ZINE can render, compile, export, screenshot, and audit itself." />
+    <meta property="og:image" content="../assets/dzine-showcase-desktop.png" />
+    <title>D-ZINE Showcase - D-ZINE 3.0</title>
+    <link rel="stylesheet" href="../theme.css" />
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.001ms !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+    </style>
+    <script type="application/dzine+json" id="dzine-root">
+      { "schemaVersion": "3.0.0", "kind": "dzine.document", "title": "D-ZINE 3.0 Showcase", "description": "Proof page for D-ZINE generated artifacts.", "modes": ["web", "mobile", "brand-kit"], "visualDialect": "precision-product", "sourceFormat": ".dzine.html", "createdBy": "D-ZINE", "quality": { "profile": "elite", "auditLevel": "strict", "antiSlopPolicy": "fail-on-critical" }, "exports": ["prompt", "tokens", "css", "tailwind", "markdown"] }
+    </script>
+<script type="application/dzine+json" id="dzine-brief">
+      { "kind": "dzine.brief", "project": "D-ZINE Showcase", "audience": ["GitHub visitors", "design engineers", "contributors"], "platforms": ["web"], "objective": "Show generated proof artifacts and explain why D-ZINE is dogfooded.", "constraints": ["Use real local screenshots", "Avoid fake metrics", "Keep proof concrete"], "successCriteria": ["Screenshots visible", "Audit process clear", "Generated route proof clear"] }
+    </script>
+<script type="application/dzine+json" id="dzine-dna">
+      { "kind": "dzine.designDNA", "density": 6, "variance": 8, "motion": 2, "imagePriority": 10, "brandPosture": "evidence-led", "copyPosture": "specific and factual", "visualDialect": "precision-product", "bannedPatterns": ["fake-perfect-metrics", "generic-proof", "hidden-evidence"], "requiredStates": ["default", "hover", "focus"] }
+    </script>
+<script type="application/dzine+json" id="dzine-tokens">
+      { "kind": "dzine.tokens", "format": "dtcg", "tokens": { "color": { "background": { "canvas": { "$type": "color", "$value": "#f4efe6" } }, "text": { "primary": { "$type": "color", "$value": "#17130f" } }, "accent": { "primary": { "$type": "color", "$value": "#c7472c" }, "support": { "$type": "color", "$value": "#526a55" }, "signal": { "$type": "color", "$value": "#c48b31" } } }, "radius": { "panel": { "$type": "dimension", "$value": "24px" } } } }
+    </script>
+<script type="application/dzine+json" id="dzine-recipes">
+      { "kind": "dzine.recipes", "recipes": [{ "id": "proof-showcase", "mode": "web", "description": "Evidence page for generated artifacts.", "sections": ["screenshots", "reports", "exports", "quality"], "requiredStates": ["default", "hover", "focus"], "imagePolicy": "real generated screenshots only", "acceptanceGates": ["screenshots-visible", "reports-linked", "contrast-aa", "responsive"] }] }
+    </script>
+<script type="application/dzine+json" id="dzine-rubric">
+      { "kind": "dzine.rubric", "scoring": { "scale": 100, "pass": 85, "elite": 92 }, "categories": [{ "id": "evidence", "weight": 25 }, { "id": "visual-proof", "weight": 20 }, { "id": "clarity", "weight": 20 }, { "id": "accessibility", "weight": 15 }, { "id": "anti-slop", "weight": 20 }], "criticalFailures": ["missing-screenshots", "fake-proof", "unreadable-text"] }
+    </script>
+  </head>
+  <body data-route="/showcase/">
+    <header class="site-header">
+      <a class="brand" href="../">
+        <span class="brand-mark">D</span>
+        <span>D-ZINE 3.0</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="../">Home</a>
+        <a href="../docs/">Docs</a>
+        <a href="../taste/">Taste</a>
+        <a href="../framework/">Framework</a>
+        <a href="../showcase/" aria-current="page">Showcase</a>
+      </nav>
+      <a class="github-pill" href="https://github.com/chasesdavis/DZINE-3.0" data-github-stars data-owner="chasesdavis" data-repo="DZINE-3.0" aria-label="Open GitHub repository">
+        <span class="github-mark" aria-hidden="true">★</span>
+        <span data-star-label>GitHub</span>
+      </a>
+    </header>
+    <section class="hero compact" data-dzine-section="overview">
+        <div class="hero-copy">
+          <p class="eyebrow">Showcase</p>
+          <h1>Proof should be visible, generated, and repeatable.</h1>
+          <p class="lede">D-ZINE ships with screenshots, exports, prompts, audits, and generated routes so contributors can inspect the system instead of trusting a marketing claim.</p>
+          <div class="actions"><a class="button primary" href="#screenshots">View screenshots</a><a class="button secondary" href="../docs/">Use the system</a></div>
+        </div>
+        <div class="hero-stage">
+          <figure class="product-window">
+            <figcaption class="window-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>reports/website/site-audit</span></figcaption>
+            <img src="../assets/dzine-showcase-desktop.png" alt="Desktop D-ZINE showcase screenshot" >
+          </figure>
+          <figure class="phone-proof"><img src="../assets/dzine-showcase-mobile.png" alt="Mobile D-ZINE showcase screenshot" ></figure>
+        </div>
+      </section>
+
+      <section data-dzine-section="design-dna">
+        <div class="section-head">
+          <div><p class="eyebrow">Dogfooding</p><h2>The website exists to prove the framework can build the website.</h2></div>
+          <p>Every page on this product launch site starts as `.dzine.html`, passes through the site generator, and can be audited as rendered output.</p>
+        </div>
+        <div class="architecture">
+          <article class="node"><span class="node-label">Source</span><h3>Page-level D-ZINE</h3><p>Home, docs, framework, and showcase each carry their own metadata, recipes, and visible sections.</p></article>
+          <article class="node center"><span class="node-label">Generated</span><h3>Static website</h3><p>The generator writes route folders, shared CSS, copied assets, header, GitHub pill, and footer.</p></article>
+          <article class="node"><span class="node-label">Verified</span><h3>Reports</h3><p>Audit output and screenshots are stored in the repo so quality can be checked again later.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="tokens">
+        <div class="section-head">
+          <div><p class="eyebrow">Proof tokens</p><h2>The showcase uses the same visual system as the product site.</h2></div>
+          <p>Shared tokens make the site feel coherent while page-level source files keep each route specific.</p>
+        </div>
+        <div class="token-strip">
+          <div class="swatch ink">Ink<small>#11100e</small></div>
+          <div class="swatch oxide">Oxide<small>#c7472c</small></div>
+          <div class="swatch moss">Moss<small>#526a55</small></div>
+          <div class="swatch gold">Signal<small>#c48b31</small></div>
+          <div class="swatch paper">Porcelain<small>#fffaf1</small></div>
+        </div>
+      </section>
+
+      <section id="screenshots" data-dzine-section="recipes" data-dzine-recipe="proof-showcase">
+        <div class="section-head">
+          <div><p class="eyebrow">Screenshots</p><h2>Responsive output is part of the proof, not an afterthought.</h2></div>
+          <p>The visual audit captures mobile, tablet, and desktop screenshots. The proof can be reviewed by humans and compared over time.</p>
+        </div>
+        <div class="proof-layout">
+          <figure class="proof-media"><img src="../assets/dzine-showcase-tablet.png" alt="Tablet D-ZINE generated showcase screenshot" ></figure>
+          <div class="proof-stack">
+            <article class="proof-card"><strong>mobile</strong><p>Small-screen layout proves touch targets, readable text, and responsive composition.</p></article>
+            <article class="proof-card"><strong>tablet</strong><p>Mid-size layout exposes spacing, line length, and section rhythm problems.</p></article>
+            <article class="proof-card"><strong>desktop</strong><p>Large layout proves hierarchy, proof staging, and visual density.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section data-dzine-section="components">
+        <div class="section-head">
+          <div><p class="eyebrow">Generated artifacts</p><h2>The repo contains proof files for prompts, exports, screenshots, and audits.</h2></div>
+          <p>D-ZINE is meant to make design quality reviewable in normal engineering workflows.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><h3>Prompt</h3><p>`reports/website/site-prompt.txt` contains the compiled agent-ready prompt.</p></article>
+          <article class="card"><h3>Exports</h3><p>`reports/website/exports` contains tokens, CSS variables, Tailwind config, and compatibility Markdown.</p></article>
+          <article class="card"><h3>Site audit</h3><p>`reports/website/site-audit` contains route-level audit reports and screenshots.</p></article>
+        </div>
+        <template data-dzine-component="proof-card" data-platform="web" data-tokens="color.background.surface,radius.panel" data-states="default,hover,focus" data-accessibility="readable proof labels,semantic article">
+          <article class="proof-card"><strong>proof</strong><p>Generated evidence belongs in the repo.</p></article>
+        </template>
+      </section>
+
+      <section data-dzine-section="anti-patterns">
+        <div class="section-head">
+          <div><p class="eyebrow">Anti-slop proof</p><h2>Evidence must be concrete enough to challenge the design.</h2></div>
+          <p>Fake proof is worse than no proof. D-ZINE should show current artifacts and avoid invented numbers.</p>
+        </div>
+        <div class="compare">
+          <article class="card reject" data-dzine-antipattern="fake-perfect-metrics" data-severity="critical"><h3>Rejected</h3><p>Invented traction, fake reliability numbers, and screenshots that are not generated from the current repo.</p></article>
+          <article class="card prefer"><h3>Preferred</h3><p>Current commands, current screenshots, generated reports, and clear notes about what has been verified.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="quality-gates">
+        <div class="section-head">
+          <div><p class="eyebrow">Quality trail</p><h2>The showcase is complete when the route audit passes.</h2></div>
+          <p>Use `dzine site audit` to rebuild the site and inspect every route. The command writes a top-level site report and route-specific audit folders.</p>
+        </div>
+        <div class="install-band">
+          <p class="eyebrow">Command</p>
+          <h2>Regenerate the proof.</h2>
+          <pre class="code">node dist/cli/index.js site audit --config dzine.config.json --out reports/website/site-audit --port 6200</pre>
+        </div>
+      </section>
+    <footer class="footer">
+      <span>D-ZINE 3.0 - generated from page-level .dzine.html sources.</span>
+      <a href="../docs/">Read the docs</a>
+    </footer>
+    <script>
+      (() => {
+        const pill = document.querySelector("[data-github-stars]");
+        const label = document.querySelector("[data-star-label]");
+        if (!pill || !label) return;
+        const owner = pill.getAttribute("data-owner");
+        const repo = pill.getAttribute("data-repo");
+        if (!owner || !repo) return;
+        fetch(`https://api.github.com/repos/${owner}/${repo}`, { headers: { "Accept": "application/vnd.github+json" } })
+          .then((response) => response.ok ? response.json() : Promise.reject(new Error("GitHub unavailable")))
+          .then((data) => {
+            const stars = typeof data.stargazers_count === "number" ? data.stargazers_count : 0;
+            label.textContent = new Intl.NumberFormat().format(stars) + " stars";
+          })
+          .catch(() => {
+            label.textContent = "GitHub";
+          });
+      })();
+    </script>
+  </body>
+</html>

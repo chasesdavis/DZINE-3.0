@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" data-dzine-version="3.0">
+  <head>
+    <meta charset="utf-8" />
+    <title>D-ZINE Docs Source</title>
+    <script type="application/dzine+json" id="dzine-root">
+      { "schemaVersion": "3.0.0", "kind": "dzine.document", "title": "D-ZINE 3.0 Docs", "description": "Detailed documentation for adopting D-ZINE.", "modes": ["web", "mobile", "app", "brand-kit"], "visualDialect": "precision-product", "sourceFormat": ".dzine.html", "createdBy": "D-ZINE", "quality": { "profile": "elite", "auditLevel": "strict", "antiSlopPolicy": "fail-on-critical" }, "exports": ["prompt", "tokens", "css", "tailwind", "markdown"] }
+    </script>
+    <script type="application/dzine+json" id="dzine-brief">
+      { "kind": "dzine.brief", "project": "D-ZINE Documentation", "audience": ["new users", "AI agents", "contributors", "design engineers"], "platforms": ["web"], "objective": "Teach users how to understand, install, author, generate, audit, and extend D-ZINE.", "constraints": ["Be detailed", "Stay navigable", "Avoid marketing filler", "Include commands and file anatomy"], "successCriteria": ["New users can start", "Agents can identify the workflow", "Contributors understand the architecture"] }
+    </script>
+    <script type="application/dzine+json" id="dzine-dna">
+      { "kind": "dzine.designDNA", "density": 8, "variance": 7, "motion": 2, "imagePriority": 5, "brandPosture": "clear, rigorous, generous", "copyPosture": "instructional, direct, complete", "visualDialect": "precision-product", "bannedPatterns": ["generic-saas-copy", "decorative-docs", "unreadable-tiny-text", "missing-examples"], "requiredStates": ["default", "hover", "focus", "empty", "error"] }
+    </script>
+    <script type="application/dzine+json" id="dzine-tokens">
+      { "kind": "dzine.tokens", "format": "dtcg", "tokens": { "color": { "background": { "canvas": { "$type": "color", "$value": "#f4efe6" }, "surface": { "$type": "color", "$value": "#fffaf1" } }, "text": { "primary": { "$type": "color", "$value": "#17130f" }, "secondary": { "$type": "color", "$value": "#554c42" } }, "accent": { "primary": { "$type": "color", "$value": "#c7472c" }, "support": { "$type": "color", "$value": "#526a55" } } }, "radius": { "panel": { "$type": "dimension", "$value": "24px" }, "control": { "$type": "dimension", "$value": "999px" } } } }
+    </script>
+    <script type="application/dzine+json" id="dzine-recipes">
+      { "kind": "dzine.recipes", "recipes": [{ "id": "docs-site", "mode": "web", "description": "Documentation route with adoption workflow.", "sections": ["overview", "install", "format", "commands", "audit", "contribute"], "requiredStates": ["default", "hover", "focus"], "imagePolicy": "use screenshots only where they clarify the system", "acceptanceGates": ["readable", "complete", "contrast-aa", "no-horizontal-scroll"] }] }
+    </script>
+    <script type="application/dzine+json" id="dzine-rubric">
+      { "kind": "dzine.rubric", "scoring": { "scale": 100, "pass": 85, "elite": 92 }, "categories": [{ "id": "clarity", "weight": 18 }, { "id": "completeness", "weight": 20 }, { "id": "navigation", "weight": 12 }, { "id": "accessibility", "weight": 15 }, { "id": "agent-readiness", "weight": 20 }, { "id": "anti-slop", "weight": 15 }], "criticalFailures": ["missing-install", "missing-cli", "missing-format", "unreadable-text", "generic-docs"] }
+    </script>
+  </head>
+  <body>
+    <main class="page-shell" data-taste-profile="dzine-launch">
+      <section class="hero compact" data-dzine-section="overview">
+        <div class="hero-copy">
+          <p class="eyebrow">Documentation</p>
+          <h1>Build full websites with D-ZINE, not just single files.</h1>
+          <p class="lede">D-ZINE uses `.dzine.html` as the design intelligence layer and a site config as the project layer. Together they generate static routes, shared themes, agent prompts, tokens, screenshots, and audits.</p>
+          <div class="actions">
+            <a class="button primary" href="#quickstart">Quickstart</a>
+            <a class="button secondary" href="#agent-workflow">Agent workflow</a>
+          </div>
+        </div>
+        <div class="hero-stage">
+          <figure class="product-window">
+            <figcaption class="window-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>dzine.config.json</span></figcaption>
+            <pre class="code">{
+  "outputDir": "website",
+  "theme": "dzine/theme.css",
+  "pages": [
+    { "route": "/", "source": "dzine/pages/home.dzine.html" },
+    { "route": "/docs/", "source": "dzine/pages/docs.dzine.html" }
+  ]
+}</pre>
+          </figure>
+        </div>
+      </section>
+
+      <section data-dzine-section="design-dna">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Mental model</p>
+            <h2>D-ZINE separates design intelligence from implementation output.</h2>
+          </div>
+          <p>The source files do not have to be the final app code. They are the visible, parseable design contract that guides agents and verifies results.</p>
+        </div>
+        <div class="doc-grid">
+          <nav class="doc-nav" aria-label="Documentation sections">
+            <a href="#quickstart">Quickstart</a>
+            <a href="#format">Format</a>
+            <a href="#taste-graph">Taste Graph</a>
+            <a href="#project-model">Project model</a>
+            <a href="#cli">CLI</a>
+            <a href="#agent-workflow">Agent workflow</a>
+            <a href="#quality">Quality gates</a>
+            <a href="#publish">Publish</a>
+          </nav>
+          <div class="doc-stack">
+            <article class="doc-panel" id="quickstart">
+              <h3>Quickstart</h3>
+              <p>Install dependencies, build the TypeScript CLI, generate the website, and audit the generated routes.</p>
+              <pre class="code">pnpm install
+pnpm build
+node dist/cli/index.js site build --config dzine.config.json --out website
+node dist/cli/index.js site audit --config dzine.config.json --out reports/website/site-audit --port 6200</pre>
+              <p>The generated `website/` folder is static HTML and assets. It can be served locally, opened by a static host, or published through GitHub Pages.</p>
+            </article>
+            <article class="doc-panel" id="format">
+              <h3>The `.dzine.html` format</h3>
+              <p>A D-ZINE page is valid HTML with visible sections plus JSON script blocks. Humans can inspect the rendered page. Agents can parse the metadata. Reviewers can audit screenshots.</p>
+              <ul>
+                <li>`dzine-root` identifies the document, modes, source format, quality policy, and exports.</li>
+                <li>`dzine-brief` states the project, audience, objective, constraints, and success criteria.</li>
+                <li>`dzine-dna` defines density, variance, motion, brand posture, copy posture, and banned patterns.</li>
+                <li>`dzine-tokens` carries DTCG-style tokens for colors, radius, spacing, and system roles.</li>
+                <li>`dzine-recipes` names workflows such as web landing, mobile app flow, brand kit, docs, and site generation.</li>
+                <li>`dzine-rubric` defines what quality means before the agent starts designing.</li>
+              </ul>
+            </article>
+            <article class="doc-panel" id="taste-graph">
+              <h3>The Taste Graph</h3>
+              <p>D-ZINE does not invent taste from vibes. It loads source-backed taste profiles from `dzine/taste/`, then audits generated work against contracts for provenance, specificity, typography, layout rhythm, product proof, and anti-slop behavior.</p>
+              <pre class="code">dzine/taste/
+  registry.json
+  sources/
+  profiles/
+  contracts/
+  critiques/
+  community/</pre>
+              <p>Seed sources include public `DESIGN.md` ecosystems, design token standards, design system galleries, product pattern libraries, canonical systems, and brand or agency case studies. Sources become structured principles and contracts, not copied visuals.</p>
+              <pre class="code">node dist/cli/index.js taste list
+node dist/cli/index.js taste show dzine-launch
+node dist/cli/index.js taste audit dzine/pages/home.dzine.html --profile dzine-launch</pre>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section data-dzine-section="tokens" id="project-model">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Project model</p>
+            <h2>A full site is config plus many D-ZINE page sources.</h2>
+          </div>
+          <p>The config controls routes, shared assets, theme, navigation, and GitHub repository metadata. Page sources control the design contract for each route.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><h3>`dzine.config.json`</h3><p>Project manifest for routes, assets, theme, nav items, output directory, and the GitHub stars pill.</p></article>
+          <article class="card"><h3>`dzine/pages/*.dzine.html`</h3><p>Page-level design sources. Each route can carry its own brief, DNA, recipes, component specimens, and QA rubric.</p></article>
+          <article class="card"><h3>`dzine/theme.css`</h3><p>Shared visual system for generated pages. This keeps public routes cohesive without hiding page-specific design intent.</p></article>
+          <article class="card wide"><h3>`website/`</h3><p>Generated output. This is the folder you link from GitHub, publish with Pages, or serve through any static host.</p></article>
+          <article class="card tall"><h3>`reports/website/site-audit`</h3><p>Route-by-route screenshots and audit reports. The proof travels with the repo.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="recipes" id="cli" data-dzine-recipe="docs-site">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">CLI</p>
+            <h2>The CLI turns source documents into usable product surfaces.</h2>
+          </div>
+          <p>Single-file commands still exist, but Goal 4 adds project-level site commands.</p>
+        </div>
+        <div class="flow">
+          <article class="step"><span class="step-num">01</span><h3>`init`</h3><p>Create a starter D-ZINE project with sample source, tokens, recipes, and docs.</p></article>
+          <article class="step"><span class="step-num">02</span><h3>`site build`</h3><p>Generate a multi-page static website from the site config and page sources.</p></article>
+          <article class="step"><span class="step-num">03</span><h3>`site audit`</h3><p>Build the site and audit every generated route with responsive screenshots.</p></article>
+          <article class="step"><span class="step-num">04</span><h3>`export`</h3><p>Export prompts, goals, design tokens, CSS variables, Tailwind config, and compatibility Markdown.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="components" id="agent-workflow">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Agent workflow</p>
+            <h2>How an AI agent should use D-ZINE to build a real product.</h2>
+          </div>
+          <p>The agent reads the source, compiles the prompt, implements the UI, captures screenshots, audits the result, and revises until the evidence is strong.</p>
+        </div>
+        <div class="specimen">
+          <article class="specimen-panel">
+            <h3>Agent contract</h3>
+            <ol>
+              <li>Read `dzine.config.json` to understand the website shape.</li>
+              <li>Read the relevant page-level `.dzine.html` source before coding.</li>
+              <li>Use tokens and recipes as implementation constraints.</li>
+              <li>Generate or edit output code only after understanding the visible examples.</li>
+              <li>Run screenshots and audits, then fix failures without lowering the bar.</li>
+            </ol>
+          </article>
+          <pre class="code">node dist/cli/index.js compile dzine/pages/home.dzine.html --out reports/home-prompt.txt
+node dist/cli/index.js export dzine/pages/home.dzine.html --target all --out reports/home-exports
+node dist/cli/index.js site audit --config dzine.config.json --out reports/website/site-audit --port 6200</pre>
+        </div>
+        <template data-dzine-component="docs-navigation" data-platform="web" data-tokens="color.background.surface,radius.panel" data-states="default,hover,focus" data-accessibility="sticky nav,semantic links,44px targets">
+          <nav class="doc-nav" aria-label="Documentation sections"></nav>
+        </template>
+      </section>
+
+      <section data-dzine-section="anti-patterns" id="quality">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Quality gates</p>
+            <h2>Anti-slop rules are operational, not inspirational.</h2>
+          </div>
+          <p>D-ZINE bans generic patterns because they create weak products. The audit loop checks layout, contrast, text size, touch targets, section completeness, and reduced motion.</p>
+        </div>
+        <div class="compare">
+          <article class="card reject" data-dzine-antipattern="generic-docs" data-severity="major"><h3>Rejected</h3><p>Docs that explain the dream but omit commands, file anatomy, route generation, quality gates, and publishing instructions.</p></article>
+          <article class="card prefer"><h3>Preferred</h3><p>Docs that teach a builder exactly what files exist, what each command does, what agents should read, and how proof is generated.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="quality-gates" id="publish">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Publishing</p>
+            <h2>Generated output is static, repo-friendly, and easy to host.</h2>
+          </div>
+          <p>The `website/` folder contains `index.html`, route folders, `theme.css`, copied assets, and progressive GitHub stars loading. There is no server requirement.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><h3>GitHub Pages</h3><p>Use the included Pages workflow to verify the release and publish the generated `website/` folder through GitHub Actions.</p></article>
+          <article class="card"><h3>Repo link</h3><p>The GitHub pill uses the configured owner and repo and fetches live stars from the GitHub REST API.</p></article>
+          <article class="card"><h3>Fallback</h3><p>If GitHub is unavailable, the pill remains a normal repository link with readable fallback text.</p></article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "kind": "dzine.taste.profile",
+  "id": "precision-product",
+  "name": "Precision Product",
+  "version": "0.1.0",
+  "status": "seed",
+  "description": "A product-grade profile for developer tools, AI systems, dashboards, and open-source launch websites that need rigor, proof, and restrained visual confidence.",
+  "extends": [],
+  "sources": ["design-md-ecosystem", "canonical-design-systems", "product-pattern-libraries", "brand-agency-case-studies"],
+  "contracts": ["anti-slop", "typography", "layout-rhythm", "product-proof"],
+  "licenseNotes": "Source-backed principles only. Do not clone proprietary product surfaces, brand assets, copy, or screenshots.",
+  "allowedUse": ["open-source product websites", "developer tooling docs", "AI framework launches", "product proof pages"],
+  "principles": [
+    "Lead with what exists: commands, generated files, screenshots, audits, docs, and source paths.",
+    "Use restraint as a quality signal; decoration must clarify hierarchy, state, proof, or brand posture.",
+    "Vary section rhythm with architecture diagrams, proof surfaces, docs, specimens, and critique comparisons.",
+    "Documentation is part of the product surface, not an afterthought.",
+    "Every external source must become a principle or contract, not a copied visual."
+  ],
+  "positiveExamples": [
+    "A hero that stages a real product surface and links to docs.",
+    "A docs page with quickstart, file anatomy, CLI commands, agent workflow, quality gates, and publishing guidance.",
+    "A proof section that references generated reports instead of fake traction metrics."
+  ],
+  "antiPatterns": [
+    "Centered AI hero with abstract gradient and no product artifact.",
+    "Three identical feature cards that could describe any SaaS product.",
+    "Generic phrases like Elevate, Unleash, Seamless, Next-gen, and Transform your workflow.",
+    "Fake metrics or unverifiable reliability claims.",
+    "Open-source launch page without install commands, docs, or repository proof."
+  ],
+  "typographyRules": [
+    "Use assertive editorial-scale headings only for true page or section leads.",
+    "Use compact, readable body copy with clear line-length limits.",
+    "Use monospaced text for commands, source paths, and proof artifacts.",
+    "Never use tiny labels as a substitute for hierarchy."
+  ],
+  "layoutRules": [
+    "Hero must show real product proof or generated artifact evidence.",
+    "Alternate narrative, proof, architecture, docs, specimen, and critique sections.",
+    "Avoid card grids unless each card has a distinct role.",
+    "Mobile must preserve hierarchy and proof without horizontal overflow."
+  ],
+  "componentRules": [
+    "Primary actions must be semantic links or buttons with visible focus and at least 44px targets.",
+    "Proof cards must include concrete nouns: command, report, screenshot, route, token, source.",
+    "External widgets, including GitHub stars, need readable fallback text."
+  ],
+  "copyRules": [
+    "Prefer specific implementation nouns over hype verbs.",
+    "State what the system does, what file proves it, and how to run it.",
+    "Do not claim world-class taste without showing source-backed contracts or evidence."
+  ],
+  "screenshotNotes": [
+    "Screenshots should show real generated output, not placeholder dashboards.",
+    "Use responsive screenshots to validate hierarchy and rhythm at mobile, tablet, and desktop sizes."
+  ],
+  "rubric": {
+    "pass": 82,
+    "elite": 92,
+    "categories": [
+      { "id": "source-provenance", "weight": 12 },
+      { "id": "product-specificity", "weight": 18 },
+      { "id": "layout-rhythm", "weight": 16 },
+      { "id": "typography-posture", "weight": 12 },
+      { "id": "proof-density", "weight": 18 },
+      { "id": "anti-slop", "weight": 16 },
+      { "id": "community-readiness", "weight": 8 }
+    ]
+  }
+}

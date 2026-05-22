@@ -1,0 +1,15 @@
+{
+  "kind": "dzine.taste.contract",
+  "id": "anti-slop",
+  "name": "Anti-Slop Contract",
+  "description": "Rejects generic AI design patterns that look polished but lack product-specific judgment.",
+  "severity": "critical",
+  "rules": [
+    { "id": "ban-generic-saas-copy", "weight": 18, "check": "copy must avoid generic SaaS verbs and empty superlatives", "failOn": ["Elevate", "Unleash", "Seamless", "Next-gen", "Transform your workflow", "Supercharge"] },
+    { "id": "ban-fake-metrics", "weight": 14, "check": "metrics must be real, sourced, or omitted", "failOn": ["99.99%", "10x", "50%", "1M+", "trusted by thousands"] },
+    { "id": "ban-template-structure", "weight": 16, "check": "layout must avoid default centered hero plus three equal cards unless the profile explicitly allows it", "failOn": ["three equal feature cards", "centered hero repetition", "meaningless pills"] },
+    { "id": "ban-decorative-noise", "weight": 12, "check": "visual complexity must serve hierarchy, proof, or interaction", "failOn": ["random badges", "decorative dashboard", "unearned gradient", "floating blobs"] },
+    { "id": "require-product-specific-proof", "weight": 20, "check": "page must include concrete artifacts, screenshots, commands, product surfaces, or source-backed evidence", "failOn": ["proof-free marketing"] }
+  ],
+  "remediation": "Replace generic claims with product-specific evidence, varied section rhythm, explicit constraints, real screenshots, real commands, and source-backed design decisions."
+}

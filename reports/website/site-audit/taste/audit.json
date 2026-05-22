@@ -1,0 +1,181 @@
+{
+  "file": "/Users/chase/Documents/DZINE 3.0/website/taste/index.html",
+  "target": "http://127.0.0.1:6202",
+  "score": 100,
+  "passed": true,
+  "findings": [],
+  "screenshots": [
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/taste/screenshots/mobile.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/taste/screenshots/tablet.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/taste/screenshots/desktop.png"
+  ],
+  "checks": {
+    "visual": {
+      "mobile": {
+        "width": 390,
+        "height": 844,
+        "horizontalOverflow": false,
+        "textCount": 63,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 10,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 51.2,
+            "text": "Taste comes from sources, contracts, critique, and review."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "The Taste Graph starts with inspectable provenance."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Users can choose or publish taste profiles."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "The audit checks for generic output that technical audits miss."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "People can bring their own taste, but not without provenance."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Self-improvement must be reviewed, local, and reversible."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Taste now has artifacts in the repo."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Inspect the active profile and report."
+          }
+        ]
+      },
+      "tablet": {
+        "width": 834,
+        "height": 1112,
+        "horizontalOverflow": false,
+        "textCount": 63,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 10,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 51.708,
+            "text": "Taste comes from sources, contracts, critique, and review."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "The Taste Graph starts with inspectable provenance."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Users can choose or publish taste profiles."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "The audit checks for generic output that technical audits miss."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "People can bring their own taste, but not without provenance."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Self-improvement must be reviewed, local, and reversible."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Taste now has artifacts in the repo."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Inspect the active profile and report."
+          }
+        ]
+      },
+      "desktop": {
+        "width": 1440,
+        "height": 1000,
+        "horizontalOverflow": false,
+        "textCount": 63,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 10,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 89.28,
+            "text": "Taste comes from sources, contracts, critique, and review."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "The Taste Graph starts with inspectable provenance."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Users can choose or publish taste profiles."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "The audit checks for generic output that technical audits miss."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "People can bring their own taste, but not without provenance."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Self-improvement must be reviewed, local, and reversible."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Taste now has artifacts in the repo."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Inspect the active profile and report."
+          }
+        ]
+      },
+      "reducedMotion": {
+        "declared": true
+      }
+    }
+  },
+  "recommendations": [
+    "ship"
+  ]
+}

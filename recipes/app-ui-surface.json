@@ -1,0 +1,9 @@
+{
+  "id": "app-ui-surface",
+  "mode": "app",
+  "description": "Production interface direction for dashboards, editors, forms, and repeated-use workflows.",
+  "sections": ["navigation", "primary-workspace", "detail-panel", "states", "settings"],
+  "requiredStates": ["default", "hover", "active", "focus", "disabled", "loading", "empty", "error", "success"],
+  "imagePolicy": "stateful-surface-plus-detail-views",
+  "acceptanceGates": ["state-complete", "keyboard-accessible", "semantic-grouping", "no-card-overload"]
+}

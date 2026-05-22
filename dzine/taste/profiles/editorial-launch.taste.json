@@ -1,0 +1,37 @@
+{
+  "kind": "dzine.taste.profile",
+  "id": "editorial-launch",
+  "name": "Editorial Launch",
+  "version": "0.1.0",
+  "status": "seed",
+  "description": "A profile for expressive launch sites that need art direction, narrative pacing, and proof without becoming generic marketing.",
+  "extends": ["precision-product"],
+  "sources": ["brand-agency-case-studies", "product-pattern-libraries", "design-md-ecosystem"],
+  "contracts": ["anti-slop", "typography", "layout-rhythm", "product-proof"],
+  "licenseNotes": "Extract editorial and brand-system principles. Do not copy agency case-study visuals, copy, or client identity assets.",
+  "allowedUse": ["launch pages", "brand reveals", "portfolio-like product storytelling", "campaign pages"],
+  "principles": [
+    "Use narrative sequence and visual contrast to create momentum.",
+    "Let imagery, typography, and product proof carry the page instead of decorative filler.",
+    "Prefer a point of view over neutral SaaS sameness."
+  ],
+  "positiveExamples": ["A first viewport with a clear product artifact and memorable editorial posture.", "A section sequence that changes tempo without losing usability."],
+  "antiPatterns": ["Awwwards-style visuals with no product explanation.", "Massive typography that hides weak substance.", "Decorative motion that harms comprehension."],
+  "typographyRules": ["Pair display-scale headings with concise supporting copy.", "Use section labels sparingly and consistently."],
+  "layoutRules": ["Use asymmetry, contrast, and whitespace, but preserve mobile reading order.", "Every expressive section needs a product or brand reason."],
+  "componentRules": ["Buttons and nav must remain simple even when the art direction is expressive."],
+  "copyRules": ["Avoid luxury vagueness; every poetic line must be backed by a concrete detail."],
+  "screenshotNotes": ["Capture wide desktop and mobile to verify the art direction survives responsive collapse."],
+  "rubric": {
+    "pass": 82,
+    "elite": 92,
+    "categories": [
+      { "id": "art-direction", "weight": 20 },
+      { "id": "narrative-rhythm", "weight": 18 },
+      { "id": "product-proof", "weight": 18 },
+      { "id": "typography", "weight": 16 },
+      { "id": "responsive", "weight": 14 },
+      { "id": "anti-slop", "weight": 14 }
+    ]
+  }
+}

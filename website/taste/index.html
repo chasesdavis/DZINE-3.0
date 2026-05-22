@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" data-dzine-version="3.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The source-backed taste registry, profiles, contracts, and critique loop behind D-ZINE." />
+    <meta property="og:title" content="D-ZINE Taste Graph" />
+    <meta property="og:description" content="The source-backed taste registry, profiles, contracts, and critique loop behind D-ZINE." />
+    <meta property="og:image" content="../assets/dzine-showcase-desktop.png" />
+    <title>D-ZINE Taste Graph - D-ZINE 3.0</title>
+    <link rel="stylesheet" href="../theme.css" />
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.001ms !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+    </style>
+    <script type="application/dzine+json" id="dzine-root">
+      { "schemaVersion": "3.0.0", "kind": "dzine.document", "title": "D-ZINE Taste Graph", "description": "The source-backed taste system behind D-ZINE.", "modes": ["web", "brand-kit"], "visualDialect": "precision-product", "sourceFormat": ".dzine.html", "createdBy": "D-ZINE", "quality": { "profile": "elite", "auditLevel": "strict", "antiSlopPolicy": "fail-on-critical" }, "exports": ["prompt", "tokens", "css", "tailwind", "markdown"] }
+    </script>
+<script type="application/dzine+json" id="dzine-brief">
+      { "kind": "dzine.brief", "project": "D-ZINE Taste Graph Page", "audience": ["AI agents", "design engineers", "contributors", "open-source users"], "platforms": ["web"], "objective": "Explain where D-ZINE gets taste from and how profiles, contracts, critiques, and community packs work.", "constraints": ["Use source-backed language", "No copying protected designs", "Show commands", "Explain self-improvement guardrails"], "successCriteria": ["Taste sources are clear", "Contracts are clear", "Community model is clear", "Taste audit command is visible"] }
+    </script>
+<script type="application/dzine+json" id="dzine-dna">
+      { "kind": "dzine.designDNA", "density": 7, "variance": 8, "motion": 2, "imagePriority": 5, "brandPosture": "source-backed, rigorous, open", "copyPosture": "specific, evidence-led, practical", "visualDialect": "precision-product", "bannedPatterns": ["vibes-without-sources", "copying-reference-work", "generic-ai-slop", "unreviewed-self-modification"], "requiredStates": ["default", "hover", "focus", "loading", "error"] }
+    </script>
+<script type="application/dzine+json" id="dzine-tokens">
+      { "kind": "dzine.tokens", "format": "dtcg", "tokens": { "color": { "background": { "canvas": { "$type": "color", "$value": "#f4efe6" }, "surface": { "$type": "color", "$value": "#fffaf1" }, "inverse": { "$type": "color", "$value": "#11100e" } }, "text": { "primary": { "$type": "color", "$value": "#17130f" }, "inverse": { "$type": "color", "$value": "#fffaf1" } }, "accent": { "primary": { "$type": "color", "$value": "#c7472c" }, "support": { "$type": "color", "$value": "#526a55" }, "signal": { "$type": "color", "$value": "#c48b31" } } }, "radius": { "panel": { "$type": "dimension", "$value": "24px" } } } }
+    </script>
+<script type="application/dzine+json" id="dzine-recipes">
+      { "kind": "dzine.recipes", "recipes": [{ "id": "taste-graph", "mode": "web", "description": "Taste registry and contract explanation.", "sections": ["sources", "profiles", "contracts", "audit", "community", "learning"], "requiredStates": ["default", "hover", "focus"], "imagePolicy": "show registry and command proof", "acceptanceGates": ["source-provenance", "no-copying", "taste-audit-visible", "community-policy-clear"] }] }
+    </script>
+<script type="application/dzine+json" id="dzine-rubric">
+      { "kind": "dzine.rubric", "scoring": { "scale": 100, "pass": 85, "elite": 92 }, "categories": [{ "id": "source-provenance", "weight": 20 }, { "id": "contract-clarity", "weight": 18 }, { "id": "community-model", "weight": 16 }, { "id": "self-improvement-guardrails", "weight": 16 }, { "id": "proof", "weight": 16 }, { "id": "anti-slop", "weight": 14 }], "criticalFailures": ["no-sources", "copying-reference-work", "unreviewed-self-modification", "generic-taste-language"] }
+    </script>
+  </head>
+  <body data-route="/taste/">
+    <header class="site-header">
+      <a class="brand" href="../">
+        <span class="brand-mark">D</span>
+        <span>D-ZINE 3.0</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="../">Home</a>
+        <a href="../docs/">Docs</a>
+        <a href="../taste/" aria-current="page">Taste</a>
+        <a href="../framework/">Framework</a>
+        <a href="../showcase/">Showcase</a>
+      </nav>
+      <a class="github-pill" href="https://github.com/chasesdavis/DZINE-3.0" data-github-stars data-owner="chasesdavis" data-repo="DZINE-3.0" aria-label="Open GitHub repository">
+        <span class="github-mark" aria-hidden="true">★</span>
+        <span data-star-label>GitHub</span>
+      </a>
+    </header>
+    <section class="hero compact" data-dzine-section="overview">
+        <div class="hero-copy">
+          <p class="eyebrow">Taste Graph</p>
+          <h1>Taste comes from sources, contracts, critique, and review.</h1>
+          <p class="lede">D-ZINE does not ask agents to “make it beautiful” and hope. It loads taste profiles backed by public design docs, canonical systems, product patterns, brand case studies, and local/community learning.</p>
+          <div class="actions"><a class="button primary" href="#audit">Run taste audit</a><a class="button secondary" href="../docs/">Read docs</a></div>
+          <div class="hero-proof">
+            <span><strong>4 profiles</strong><small>product, editorial, mobile, identity</small></span>
+            <span><strong>4 contracts</strong><small>anti-slop, type, rhythm, proof</small></span>
+            <span><strong>reviewed</strong><small>community packs need provenance</small></span>
+          </div>
+        </div>
+        <div class="hero-stage">
+          <figure class="product-window">
+            <figcaption class="window-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>dzine/taste/registry.json</span></figcaption>
+            <pre class="code">{
+  "defaultProfile": "precision-product",
+  "sources": ["design-md", "canonical-systems", "product-patterns"],
+  "profiles": ["precision-product", "dzine-launch", "editorial-launch"],
+  "contracts": ["anti-slop", "typography", "layout-rhythm"]
+}</pre>
+          </figure>
+        </div>
+      </section>
+
+      <section data-dzine-section="design-dna">
+        <div class="section-head">
+          <div><p class="eyebrow">Sources</p><h2>The Taste Graph starts with inspectable provenance.</h2></div>
+          <p>Sources include public `DESIGN.md` ecosystems, design token standards, design system galleries, real product pattern libraries, canonical design systems, and brand or agency case studies.</p>
+        </div>
+        <div class="architecture">
+          <article class="node"><span class="node-label">Discover</span><h3>Source registries</h3><p>Awesome Design MD Gallery, awesome-design-md, design system galleries, and curated GitHub repos help discover public references.</p></article>
+          <article class="node center"><span class="node-label">Distill</span><h3>Principles, not copies</h3><p>D-ZINE extracts general rules, constraints, anti-patterns, and rubrics. It does not clone protected visuals or brand identities.</p></article>
+          <article class="node"><span class="node-label">Enforce</span><h3>Contracts</h3><p>Profiles reference contracts that can score generated work for specificity, proof, typography, rhythm, and anti-slop behavior.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="tokens">
+        <div class="section-head">
+          <div><p class="eyebrow">Profiles</p><h2>Users can choose or publish taste profiles.</h2></div>
+          <p>A taste profile is a portable contract: source URLs, license notes, allowed use, principles, examples, anti-patterns, component rules, typography rules, layout rules, copy rules, screenshot notes, and a rubric.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><h3>dzine-launch</h3><p>D-ZINE-specific launch profile for source-backed AI design systems, inspection surfaces, contracts, and open-source proof.</p></article>
+          <article class="card"><h3>editorial-launch</h3><p>Expressive launches that need art direction without losing product specificity.</p></article>
+          <article class="card"><h3>mobile-native</h3><p>Task-first mobile flows with platform awareness, state clarity, and touch ergonomics.</p></article>
+          <article class="card wide"><h3>brand-identity</h3><p>Identity systems with behavior, misuse rules, applications, typography posture, and voice guidance.</p></article>
+          <article class="card tall"><h3>community packs</h3><p>Future packages like `@dzine/taste-fintech-premium` must include provenance and review status.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="recipes" data-dzine-recipe="taste-graph" id="audit">
+        <div class="section-head">
+          <div><p class="eyebrow">Taste audit</p><h2>The audit checks for generic output that technical audits miss.</h2></div>
+          <p>A page can pass contrast and responsiveness while still feeling generic. Taste audit adds checks for source declaration, proof density, section rhythm, hype language, fake metrics, and profile completeness.</p>
+        </div>
+        <div class="specimen">
+          <article class="specimen-panel">
+            <h3>Command</h3>
+            <p>Run taste audit against a D-ZINE page source and a selected profile.</p>
+            <div class="state-list"><span>profile</span><span>sources</span><span>contracts</span><span>proof</span><span>rhythm</span></div>
+          </article>
+          <pre class="code">node dist/cli/index.js taste list
+node dist/cli/index.js taste show dzine-launch
+node dist/cli/index.js taste audit dzine/pages/home.dzine.html --profile dzine-launch --out reports/website/taste-home.md</pre>
+        </div>
+      </section>
+
+      <section data-dzine-section="components">
+        <div class="section-head">
+          <div><p class="eyebrow">Community</p><h2>People can bring their own taste, but not without provenance.</h2></div>
+          <p>D-ZINE should let creators publish templates, profiles, and contracts. The trust model matters: community taste packs are untrusted until reviewed.</p>
+        </div>
+        <div class="flow">
+          <article class="step"><span class="step-num">01</span><h3>Create</h3><p>Author a profile with sources, allowed use, principles, examples, rules, and rubric.</p></article>
+          <article class="step"><span class="step-num">02</span><h3>Audit</h3><p>Run it against generated work and prove it catches generic output.</p></article>
+          <article class="step"><span class="step-num">03</span><h3>Review</h3><p>Check provenance, licensing, copying risk, examples, and failure modes.</p></article>
+          <article class="step"><span class="step-num">04</span><h3>Share</h3><p>Publish as a reusable profile or package after review.</p></article>
+        </div>
+        <template data-dzine-component="taste-profile-card" data-platform="web" data-tokens="color.background.surface,radius.panel" data-states="default,hover,focus,reviewed,untrusted" data-accessibility="semantic article,readable provenance,44px links">
+          <article class="card"><h3>taste profile</h3><p>Profiles are source-backed contracts.</p></article>
+        </template>
+      </section>
+
+      <section data-dzine-section="anti-patterns">
+        <div class="section-head">
+          <div><p class="eyebrow">Guardrails</p><h2>Self-improvement must be reviewed, local, and reversible.</h2></div>
+          <p>The learning loop stores approved local learnings, but it must not silently mutate global taste profiles or copy designs from references.</p>
+        </div>
+        <div class="compare">
+          <article class="card reject" data-dzine-antipattern="unreviewed-self-modification" data-severity="critical"><h3>Rejected</h3><p>Scrape inspiration, mutate global rules, copy a reference, and call the output taste.</p></article>
+          <article class="card prefer"><h3>Preferred</h3><p>Screenshot output, critique against contracts, ask for approval, store local learning, and propose reviewed community updates.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="quality-gates">
+        <div class="section-head">
+          <div><p class="eyebrow">Proof</p><h2>Taste now has artifacts in the repo.</h2></div>
+          <p>The registry, profiles, contracts, critiques, reports, and commands make design judgment inspectable. This is the difference between vibe prompting and a taste system.</p>
+        </div>
+        <div class="install-band">
+          <p class="eyebrow">Taste proof</p>
+          <h2>Inspect the active profile and report.</h2>
+          <pre class="code">node dist/cli/index.js taste show dzine-launch
+node dist/cli/index.js taste audit dzine/pages/home.dzine.html --profile dzine-launch</pre>
+        </div>
+      </section>
+    <footer class="footer">
+      <span>D-ZINE 3.0 - generated from page-level .dzine.html sources.</span>
+      <a href="../docs/">Read the docs</a>
+    </footer>
+    <script>
+      (() => {
+        const pill = document.querySelector("[data-github-stars]");
+        const label = document.querySelector("[data-star-label]");
+        if (!pill || !label) return;
+        const owner = pill.getAttribute("data-owner");
+        const repo = pill.getAttribute("data-repo");
+        if (!owner || !repo) return;
+        fetch(`https://api.github.com/repos/${owner}/${repo}`, { headers: { "Accept": "application/vnd.github+json" } })
+          .then((response) => response.ok ? response.json() : Promise.reject(new Error("GitHub unavailable")))
+          .then((data) => {
+            const stars = typeof data.stargazers_count === "number" ? data.stargazers_count : 0;
+            label.textContent = new Intl.NumberFormat().format(stars) + " stars";
+          })
+          .catch(() => {
+            label.textContent = "GitHub";
+          });
+      })();
+    </script>
+  </body>
+</html>

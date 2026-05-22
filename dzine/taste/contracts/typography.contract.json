@@ -1,0 +1,14 @@
+{
+  "kind": "dzine.taste.contract",
+  "id": "typography",
+  "name": "Typography Contract",
+  "description": "Requires deliberate type hierarchy, readable documentation surfaces, and non-default type posture.",
+  "severity": "major",
+  "rules": [
+    { "id": "type-hierarchy", "weight": 20, "check": "headings, body, labels, and code must each have an explicit role" },
+    { "id": "line-length", "weight": 12, "check": "body copy should keep readable line lengths and avoid full-width paragraphs" },
+    { "id": "code-readability", "weight": 10, "check": "code blocks must be scroll-safe, legible, and responsive" },
+    { "id": "avoid-default-posture", "weight": 12, "check": "the profile should state why its type posture fits the product" }
+  ],
+  "remediation": "Define type roles, tighten line length, add code-surface rules, and document the type posture in the active taste profile."
+}

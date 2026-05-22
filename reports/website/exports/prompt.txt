@@ -1,0 +1,65 @@
+# D-ZINE Agent Prompt: D-ZINE 3.0 Website
+
+You are working from a canonical .dzine.html design instruction document. Treat the renderable HTML and its machine-readable JSON as the design source of truth. Markdown exports are compatibility artifacts only.
+
+## Project
+D-ZINE 3.0 Launch Website
+
+## Objective
+Launch a multi-page open-source product website generated from D-ZINE source files.
+
+## Audience
+- GitHub visitors
+- AI coding agents
+- design engineers
+- open-source contributors
+
+## Platforms
+- web
+
+## Design DNA
+- Taste profile: dzine-launch
+- Visual dialect: precision-product
+- Density: 6
+- Variance: 8
+- Motion: 3
+- Image priority: 9
+- Brand posture: confident, open-source, rigorous
+- Copy posture: plain, specific, proof-driven
+
+## Token Branches
+- color
+- space
+- radius
+
+## Recipes
+- web-landing (web): hero, proof, workflow, docs, quality
+- mobile-app-flow (mobile): hero, proof, docs, cta
+- brand-kit (brand-kit): palette, type, applications
+
+## Required States
+default, hover, focus, loading, empty, error, pressed, overview, usage, misuse
+
+## Acceptance Gates
+contrast-aa, no-horizontal-scroll, anti-slop-critical, first-viewport-clear, touch-target-size, text-readable, role-based-palette, no-generic-startup-language
+
+## Visible Instruction Sections
+overview, design-dna, tokens, recipes, components, anti-patterns, quality-gates
+
+## Non-Negotiable Anti-Slop Bans
+- ai-purple-gradient
+- centered-hero-repetition
+- three-equal-card-row
+- generic-saas-copy
+- nested-card-prison
+- meaningless-pill-clutter
+- unreadable-tiny-text
+- inaccessible-motion
+
+## Operating Rules
+1. Preserve D-ZINE tokens and design DNA.
+2. Build complete files only; do not output skipped sections or placeholder implementation.
+3. Include loading, empty, error, focus, disabled, hover, and active states where relevant.
+4. Use accessibility and responsive behavior as taste requirements.
+5. Verify output against the acceptance gates before calling it done.
+6. If a taste profile is declared, preserve its source-backed principles and run taste audit before shipping.

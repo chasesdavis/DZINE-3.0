@@ -1,0 +1,25 @@
+{
+  "kind": "dzine.taste.source",
+  "id": "design-md-ecosystem",
+  "name": "Public DESIGN.md Ecosystem",
+  "category": "design-md",
+  "provenance": [
+    {
+      "label": "Awesome Design MD Gallery",
+      "url": "https://design.hagicode.com/",
+      "use": "Discover public design-system documents and README/DESIGN.md references."
+    },
+    {
+      "label": "awesome-design-md",
+      "url": "https://github.com/VoltAgent/awesome-design-md?ref=aiposthub.com",
+      "use": "Seed source discovery for public DESIGN.md style documents."
+    }
+  ],
+  "licenseNotes": "Treat each linked project independently. Do not copy proprietary assets or protected copy. Extract general principles only when the source license allows it.",
+  "allowedUse": ["source discovery", "principle extraction", "anti-pattern comparison", "metadata indexing"],
+  "extractedSignals": [
+    "Design docs should expose explicit system rules, not only marketing screenshots.",
+    "Good design docs connect foundations, components, usage guidance, examples, and governance.",
+    "D-ZINE profiles must preserve source provenance so generated taste contracts are inspectable."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "mobile-app-flow",
+  "mode": "mobile",
+  "description": "Platform-aware mobile flow direction with safe areas, readable text, and app-native navigation.",
+  "sections": ["onboarding", "home", "detail-or-action", "settings-or-completion"],
+  "requiredStates": ["default", "pressed", "focus", "loading", "empty", "error", "success"],
+  "imagePolicy": "one-phone-screen-per-step",
+  "acceptanceGates": ["touch-target-size", "safe-area-aware", "no-phone-sized-website", "text-readable"]
+}

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en" data-dzine-version="3.0">
+  <head>
+    <meta charset="utf-8" />
+    <title>D-ZINE 3.0 Home Source</title>
+    <script type="application/dzine+json" id="dzine-root">
+      {
+        "schemaVersion": "3.0.0",
+        "kind": "dzine.document",
+        "title": "D-ZINE 3.0 Website",
+        "description": "The generated public home page for D-ZINE 3.0.",
+        "modes": ["web", "mobile", "brand-kit"],
+        "visualDialect": "precision-product",
+        "sourceFormat": ".dzine.html",
+        "createdBy": "D-ZINE",
+        "quality": { "profile": "elite", "auditLevel": "strict", "antiSlopPolicy": "fail-on-critical" },
+        "exports": ["prompt", "tokens", "css", "tailwind", "markdown"]
+      }
+    </script>
+    <script type="application/dzine+json" id="dzine-brief">
+      {
+        "kind": "dzine.brief",
+        "project": "D-ZINE 3.0 Launch Website",
+        "audience": ["GitHub visitors", "AI coding agents", "design engineers", "open-source contributors"],
+        "platforms": ["web"],
+        "objective": "Launch a multi-page open-source product website generated from D-ZINE source files.",
+        "constraints": ["Use local visual proof assets", "Expose JSON metadata", "Audit rendered output", "Stay static-host friendly"],
+        "successCriteria": ["Generated routes render", "Docs route exists", "GitHub pill renders", "Visual audit passes"]
+      }
+    </script>
+    <script type="application/dzine+json" id="dzine-dna">
+      {
+        "kind": "dzine.designDNA",
+        "density": 6,
+        "variance": 8,
+        "motion": 3,
+        "imagePriority": 9,
+        "brandPosture": "confident, open-source, rigorous",
+        "copyPosture": "plain, specific, proof-driven",
+        "visualDialect": "precision-product",
+        "bannedPatterns": ["ai-purple-gradient", "centered-hero-repetition", "three-equal-card-row", "generic-saas-copy", "nested-card-prison", "meaningless-pill-clutter", "unreadable-tiny-text", "inaccessible-motion"],
+        "requiredStates": ["default", "hover", "active", "focus", "loading", "empty", "error"]
+      }
+    </script>
+    <script type="application/dzine+json" id="dzine-tokens">
+      {
+        "kind": "dzine.tokens",
+        "format": "dtcg",
+        "tokens": {
+          "color": {
+            "background": { "canvas": { "$type": "color", "$value": "#f4efe6" }, "surface": { "$type": "color", "$value": "#fffaf1" }, "inverse": { "$type": "color", "$value": "#11100e" } },
+            "text": { "primary": { "$type": "color", "$value": "#17130f" }, "secondary": { "$type": "color", "$value": "#554c42" }, "inverse": { "$type": "color", "$value": "#fffaf1" } },
+            "accent": { "primary": { "$type": "color", "$value": "#c7472c" }, "support": { "$type": "color", "$value": "#526a55" }, "signal": { "$type": "color", "$value": "#c48b31" } },
+            "border": { "soft": { "$type": "color", "$value": "rgba(23, 19, 15, 0.14)" }, "inverse": { "$type": "color", "$value": "rgba(255, 250, 241, 0.18)" } }
+          },
+          "space": { "4": { "$type": "dimension", "$value": "1rem" }, "8": { "$type": "dimension", "$value": "2rem" }, "16": { "$type": "dimension", "$value": "4rem" } },
+          "radius": { "control": { "$type": "dimension", "$value": "999px" }, "panel": { "$type": "dimension", "$value": "24px" }, "display": { "$type": "dimension", "$value": "30px" } }
+        }
+      }
+    </script>
+    <script type="application/dzine+json" id="dzine-recipes">
+      {
+        "kind": "dzine.recipes",
+        "recipes": [
+          { "id": "web-landing", "mode": "web", "description": "Public product launch website.", "sections": ["hero", "proof", "workflow", "docs", "quality"], "requiredStates": ["default", "hover", "focus", "loading", "empty", "error"], "imagePolicy": "use generated product screenshots as proof", "acceptanceGates": ["contrast-aa", "no-horizontal-scroll", "anti-slop-critical", "first-viewport-clear"] },
+          { "id": "mobile-app-flow", "mode": "mobile", "description": "Responsive product launch site.", "sections": ["hero", "proof", "docs", "cta"], "requiredStates": ["default", "pressed", "focus"], "imagePolicy": "show mobile screenshot proof", "acceptanceGates": ["touch-target-size", "text-readable"] },
+          { "id": "brand-kit", "mode": "brand-kit", "description": "D-ZINE brand presentation.", "sections": ["palette", "type", "applications"], "requiredStates": ["overview", "usage", "misuse"], "imagePolicy": "show product applications", "acceptanceGates": ["role-based-palette", "no-generic-startup-language"] }
+        ]
+      }
+    </script>
+    <script type="application/dzine+json" id="dzine-rubric">
+      {
+        "kind": "dzine.rubric",
+        "scoring": { "scale": 100, "pass": 85, "elite": 92 },
+        "categories": [
+          { "id": "hierarchy", "weight": 15 },
+          { "id": "spacing", "weight": 12 },
+          { "id": "tokens", "weight": 10 },
+          { "id": "accessibility", "weight": 15 },
+          { "id": "responsive", "weight": 12 },
+          { "id": "motion", "weight": 8 },
+          { "id": "anti-slop", "weight": 18 },
+          { "id": "system-reuse", "weight": 10 }
+        ],
+        "criticalFailures": ["unreadable-text", "missing-focus-state", "horizontal-scroll-mobile", "generic-ai-gradient", "missing-required-json"]
+      }
+    </script>
+  </head>
+  <body>
+    <main class="page-shell" id="top" data-taste-profile="dzine-launch">
+      <section class="hero" data-dzine-section="overview">
+        <div class="hero-copy">
+          <p class="eyebrow">Renderable AI design system</p>
+          <h1>Source files agents can see. Interfaces people can trust.</h1>
+          <p class="lede">D-ZINE turns design direction into a browser-rendered source artifact: visual rules, JSON metadata, tokens, recipes, component specimens, anti-patterns, screenshots, and audits in one framework.</p>
+          <div class="actions">
+            <a class="button primary" href="{{prefix}}/docs/">Read the docs</a>
+            <a class="button secondary" href="{{prefix}}/framework/">See the framework</a>
+          </div>
+          <div class="hero-proof" aria-label="D-ZINE proof points">
+            <span><strong>5 routes</strong><small>home, docs, taste, framework, showcase</small></span>
+            <span><strong>dzine-launch</strong><small>active taste profile</small></span>
+            <span><strong>live stars</strong><small>GitHub count with fallback</small></span>
+          </div>
+        </div>
+        <div class="hero-stage" aria-label="D-ZINE rendered showcase preview">
+          <figure class="product-window">
+            <figcaption class="window-bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>dzine/pages/home.dzine.html</span>
+            </figcaption>
+            <img src="{{prefix}}/assets/dzine-showcase-desktop.png" alt="Desktop screenshot of the D-ZINE renderable instruction showcase" />
+          </figure>
+          <figure class="phone-proof">
+            <img src="{{prefix}}/assets/dzine-showcase-mobile.png" alt="Mobile screenshot of the D-ZINE showcase" />
+          </figure>
+          <p class="stage-note">This site is generated from D-ZINE page sources, not hand-maintained as one monolithic page.</p>
+        </div>
+      </section>
+
+      <section data-dzine-section="design-dna">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">The format</p>
+            <h2>A design manual, runtime contract, and QA target in the same artifact.</h2>
+          </div>
+          <p>D-ZINE is the bridge between design taste and agent implementation. A source page renders visually, carries JSON metadata, exports tokens, compiles prompts, and can be audited with screenshots.</p>
+        </div>
+        <div class="architecture">
+          <article class="node">
+            <span class="node-label">Inspection layer</span>
+            <h3>Renderable source</h3>
+            <p>Design examples, specimens, states, anti-patterns, taste declarations, and proof images appear directly in the browser.</p>
+          </article>
+          <article class="node center">
+            <span class="node-label">Contract layer</span>
+            <h3>Taste-bound routes</h3>
+            <p>A config file points to page sources, brand identity, taste profiles, generated routes, and route-level audits.</p>
+          </article>
+          <article class="node">
+            <span class="node-label">Output layer</span>
+            <h3>Compiled outputs</h3>
+            <p>Prompts, tokens, CSS variables, Tailwind fragments, goals, compatibility docs, taste reports, and screenshots.</p>
+          </article>
+        </div>
+      </section>
+
+      <section data-dzine-section="tokens">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Design tokens</p>
+            <h2>Exportable taste, not screenshots of taste.</h2>
+          </div>
+          <p>The page defines role-based tokens for color, spacing, radius, and system states. Agents can parse them while reviewers see the visual language in context.</p>
+        </div>
+        <div class="token-strip">
+          <div class="swatch ink">Ink<small>#11100e</small></div>
+          <div class="swatch oxide">Oxide<small>#c7472c</small></div>
+          <div class="swatch moss">Moss<small>#526a55</small></div>
+          <div class="swatch gold">Signal<small>#c48b31</small></div>
+          <div class="swatch paper">Porcelain<small>#fffaf1</small></div>
+        </div>
+      </section>
+
+      <section data-dzine-section="recipes" data-dzine-recipe="web-landing">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Workflow</p>
+            <h2>Author page sources. Generate routes. Audit the full website.</h2>
+          </div>
+          <p>D-ZINE now works as a site system: `dzine.config.json`, page-level `.dzine.html` files, brand identity, taste profiles, generated routes, and route-by-route visual audit.</p>
+        </div>
+        <div class="flow">
+          <article class="step"><span class="step-num">01</span><h3>Declare</h3><p>Bind pages to `dzine-launch`, source-backed contracts, brand identity, and route metadata.</p></article>
+          <article class="step"><span class="step-num">02</span><h3>Inspect</h3><p>Read the rendered source, JSON metadata, specimens, taste profile, and proof surfaces before coding.</p></article>
+          <article class="step"><span class="step-num">03</span><h3>Generate</h3><p>Build static routes, shared theme, GitHub pill, docs, taste page, framework page, and showcase.</p></article>
+          <article class="step"><span class="step-num">04</span><h3>Critique</h3><p>Run technical and taste audits so generic output fails before release.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="components">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Component specimens</p>
+            <h2>Examples become contracts instead of decoration.</h2>
+          </div>
+          <p>Specimens declare platform, tokens, states, accessibility requirements, and anti-patterns. Agents get a bounded target instead of vague taste advice.</p>
+        </div>
+        <div class="specimen">
+          <article class="specimen-panel">
+            <h3>Primary action</h3>
+            <p>Minimum 48px target, semantic accent token, visible focus, and reduced-motion-safe feedback.</p>
+            <div class="actions">
+              <a class="button primary" href="{{prefix}}/docs/">Start with docs</a>
+              <a class="button secondary" href="{{prefix}}/showcase/">Proof</a>
+            </div>
+            <div class="state-list" aria-label="Required component states"><span>default</span><span>hover</span><span>active</span><span>focus</span><span>loading</span><span>error</span></div>
+          </article>
+          <pre class="code">&lt;template data-dzine-component="primary-action"
+  data-platform="web"
+  data-tokens="color.accent.primary,radius.control"
+  data-states="default,hover,active,focus,disabled,loading"&gt;</pre>
+        </div>
+        <template data-dzine-component="primary-action" data-platform="web" data-tokens="color.accent.primary,radius.control" data-states="default,hover,active,focus,disabled,loading" data-accessibility="48px target,visible focus,reduced motion">
+          <a class="button primary" href="{{prefix}}/docs/">Start with docs</a>
+        </template>
+      </section>
+
+      <section data-dzine-section="anti-patterns">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Anti-slop</p>
+            <h2>The system names weak patterns before they ship.</h2>
+          </div>
+          <p>D-ZINE rejects generic visual habits and asks for reusable design logic: role-based tokens, real hierarchy, complete states, responsive proof, and meaningful product context.</p>
+        </div>
+        <div class="compare">
+          <article class="card reject" data-dzine-antipattern="three-equal-card-row" data-severity="major">
+            <h3>Rejected</h3>
+            <p>Repeated equal feature cards, filler labels, fake metrics, and decorative complexity that cannot become a design system.</p>
+          </article>
+          <article class="card prefer">
+            <h3>Preferred</h3>
+            <p>Section rhythm, visual evidence, stateful components, accessible motion, and audits that expose problems before release.</p>
+          </article>
+        </div>
+      </section>
+
+      <section data-dzine-section="quality-gates">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Dogfooded proof</p>
+            <h2>This website is generated with D-ZINE itself.</h2>
+          </div>
+          <p>The site is built from page-level D-ZINE source artifacts. The CLI generates routes, exports source artifacts, screenshots pages, and audits the rendered website.</p>
+        </div>
+        <div class="proof-layout">
+          <figure class="proof-media"><img src="{{prefix}}/assets/dzine-showcase-tablet.png" alt="Tablet screenshot generated from the D-ZINE showcase" /></figure>
+          <div class="proof-stack">
+            <article class="proof-card"><strong>5</strong><p>Generated routes: home, docs, taste, framework, and showcase.</p></article>
+            <article class="proof-card"><strong>taste</strong><p>The CLI audits pages against source-backed D-ZINE launch contracts.</p></article>
+            <article class="proof-card"><strong>brand</strong><p>The website is governed by `dzine/brand/identity.json` and `dzine-launch`.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="install-band">
+          <p class="eyebrow">Run it</p>
+          <h2>One design system. Many generated pages.</h2>
+          <p>Build the website from the repo-level D-ZINE project config, then audit the generated routes.</p>
+          <pre class="code">pnpm build
+node dist/cli/index.js site build --config dzine.config.json --out website
+node dist/cli/index.js site audit --config dzine.config.json --out reports/website/site-audit --port 6200</pre>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

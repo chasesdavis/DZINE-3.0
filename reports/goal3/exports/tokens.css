@@ -1,0 +1,18 @@
+:root {
+  --dz-color-background-canvas: #f8f4ec;
+  --dz-color-background-surface: #fffaf2;
+  --dz-color-text-primary: #161411;
+  --dz-color-text-secondary: #5d574f;
+  --dz-color-accent-primary: #9b3f2f;
+  --dz-color-accent-support: #687663;
+  --dz-color-border-soft: rgba(22, 20, 17, 0.16);
+  --dz-space-4: 1rem;
+  --dz-space-8: 2rem;
+  --dz-space-12: 3rem;
+  --dz-space-24: 6rem;
+  --dz-radius-control: 999px;
+  --dz-radius-panel: 22px;
+  --dz-radius-display: 28px;
+  --dz-motion-productive: 180ms;
+  --dz-motion-expressive: 520ms;
+}

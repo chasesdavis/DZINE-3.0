@@ -1,0 +1,19 @@
+:root {
+  --dz-color-background-canvas: #f4efe6;
+  --dz-color-background-surface: #fffaf1;
+  --dz-color-background-inverse: #11100e;
+  --dz-color-text-primary: #17130f;
+  --dz-color-text-secondary: #554c42;
+  --dz-color-text-inverse: #fffaf1;
+  --dz-color-accent-primary: #c7472c;
+  --dz-color-accent-support: #526a55;
+  --dz-color-accent-signal: #c48b31;
+  --dz-color-border-soft: rgba(23, 19, 15, 0.14);
+  --dz-color-border-inverse: rgba(255, 250, 241, 0.18);
+  --dz-space-4: 1rem;
+  --dz-space-8: 2rem;
+  --dz-space-16: 4rem;
+  --dz-radius-control: 999px;
+  --dz-radius-panel: 24px;
+  --dz-radius-display: 30px;
+}

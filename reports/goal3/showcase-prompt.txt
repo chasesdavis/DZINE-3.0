@@ -1,0 +1,68 @@
+# D-ZINE Agent Prompt: D-ZINE 3.0 Showcase
+
+You are working from a canonical .dzine.html design instruction document. Treat the renderable HTML and its machine-readable JSON as the design source of truth. Markdown exports are compatibility artifacts only.
+
+## Project
+D-ZINE 3.0
+
+## Objective
+Prove a renderable HTML instruction format can outperform static Markdown skills for design direction.
+
+## Audience
+- AI coding agents
+- design engineers
+- brand teams
+- founders
+
+## Platforms
+- web
+- mobile
+- app
+- brand-kit
+- brand-identity
+
+## Design DNA
+- Visual dialect: precision-product
+- Density: 4
+- Variance: 8
+- Motion: 5
+- Image priority: 7
+- Brand posture: precise, confident, restrained
+- Copy posture: specific, direct, low-hype
+
+## Token Branches
+- color
+- space
+- radius
+- motion
+
+## Recipes
+- web-landing (web): hero, proof, feature-system, product-view, conversion, final-cta
+- mobile-app-flow (mobile): onboarding, home, detail-or-action, settings-or-completion
+- brand-kit (brand-kit): logo-cover, logo-concept, construction, color, typography, digital-application, physical-application, image-direction, system-detail
+
+## Required States
+default, hover, focus, loading, empty, error, pressed, success, overview, usage, misuse
+
+## Acceptance Gates
+contrast-aa, no-horizontal-scroll, anti-slop-critical, first-viewport-clear, touch-target-size, safe-area-aware, no-phone-sized-website, text-readable, symbolic-logo, role-based-palette, applications-prove-system, no-generic-startup-language
+
+## Visible Instruction Sections
+overview, design-dna, tokens, recipes, components, anti-patterns, quality-gates
+
+## Non-Negotiable Anti-Slop Bans
+- ai-purple-gradient
+- centered-hero-repetition
+- three-equal-card-row
+- generic-saas-copy
+- nested-card-prison
+- meaningless-pill-clutter
+- unreadable-tiny-text
+- inaccessible-motion
+
+## Operating Rules
+1. Preserve D-ZINE tokens and design DNA.
+2. Build complete files only; do not output skipped sections or placeholder implementation.
+3. Include loading, empty, error, focus, disabled, hover, and active states where relevant.
+4. Use accessibility and responsive behavior as taste requirements.
+5. Verify output against the acceptance gates before calling it done.

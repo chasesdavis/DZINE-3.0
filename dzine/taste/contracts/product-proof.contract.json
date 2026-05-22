@@ -1,0 +1,14 @@
+{
+  "kind": "dzine.taste.contract",
+  "id": "product-proof",
+  "name": "Product Proof Contract",
+  "description": "Requires a launch page or app surface to prove what exists instead of relying on aspirational claims.",
+  "severity": "critical",
+  "rules": [
+    { "id": "real-artifacts", "weight": 20, "check": "show commands, screenshots, generated files, URLs, repository paths, or concrete product surfaces" },
+    { "id": "traceable-claims", "weight": 18, "check": "claims must point to a source, report, command output, or artifact" },
+    { "id": "docs-depth", "weight": 14, "check": "open-source product pages should include docs, install instructions, architecture, and contribution path" },
+    { "id": "fallback-states", "weight": 8, "check": "external proof widgets must have a readable fallback" }
+  ],
+  "remediation": "Replace unsupported claims with inspectable proof artifacts, generated reports, screenshots, docs, and fallback behavior."
+}

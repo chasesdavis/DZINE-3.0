@@ -1,0 +1,9 @@
+{
+  "id": "brand-kit",
+  "mode": "brand-kit",
+  "description": "Identity board direction with logo concept, construction, tokens, applications, and image world.",
+  "sections": ["logo-cover", "logo-concept", "construction", "color", "typography", "digital-application", "physical-application", "image-direction", "system-detail"],
+  "requiredStates": ["overview", "usage", "misuse"],
+  "imagePolicy": "single-board-plus-detail-panels",
+  "acceptanceGates": ["symbolic-logo", "role-based-palette", "applications-prove-system", "no-generic-startup-language"]
+}

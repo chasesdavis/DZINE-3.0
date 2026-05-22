@@ -1,0 +1,181 @@
+{
+  "file": "/Users/chase/Documents/DZINE 3.0/website/showcase/index.html",
+  "target": "http://127.0.0.1:6204",
+  "score": 100,
+  "passed": true,
+  "findings": [],
+  "screenshots": [
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/showcase/screenshots/mobile.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/showcase/screenshots/tablet.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/showcase/screenshots/desktop.png"
+  ],
+  "checks": {
+    "visual": {
+      "mobile": {
+        "width": 390,
+        "height": 844,
+        "horizontalOverflow": false,
+        "textCount": 52,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 10,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 51.2,
+            "text": "Proof should be visible, generated, and repeatable."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "The website exists to prove the framework can build the website."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "The showcase uses the same visual system as the product site."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Responsive output is part of the proof, not an afterthought."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "The repo contains proof files for prompts, exports, screenshots, and audits."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Evidence must be concrete enough to challenge the design."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "The showcase is complete when the route audit passes."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Regenerate the proof."
+          }
+        ]
+      },
+      "tablet": {
+        "width": 834,
+        "height": 1112,
+        "horizontalOverflow": false,
+        "textCount": 52,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 10,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 51.708,
+            "text": "Proof should be visible, generated, and repeatable."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "The website exists to prove the framework can build the website."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "The showcase uses the same visual system as the product site."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Responsive output is part of the proof, not an afterthought."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "The repo contains proof files for prompts, exports, screenshots, and audits."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Evidence must be concrete enough to challenge the design."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "The showcase is complete when the route audit passes."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Regenerate the proof."
+          }
+        ]
+      },
+      "desktop": {
+        "width": 1440,
+        "height": 1000,
+        "horizontalOverflow": false,
+        "textCount": 52,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 10,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 89.28,
+            "text": "Proof should be visible, generated, and repeatable."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "The website exists to prove the framework can build the website."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "The showcase uses the same visual system as the product site."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Responsive output is part of the proof, not an afterthought."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "The repo contains proof files for prompts, exports, screenshots, and audits."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Evidence must be concrete enough to challenge the design."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "The showcase is complete when the route audit passes."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Regenerate the proof."
+          }
+        ]
+      },
+      "reducedMotion": {
+        "declared": true
+      }
+    }
+  },
+  "recommendations": [
+    "ship"
+  ]
+}

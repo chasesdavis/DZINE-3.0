@@ -1,0 +1,166 @@
+{
+  "file": "/Users/chase/Documents/DZINE 3.0/examples/showcase/dzine-3-showcase.dzine.html",
+  "target": "http://127.0.0.1:4311",
+  "score": 100,
+  "passed": true,
+  "findings": [],
+  "screenshots": [
+    "/Users/chase/Documents/DZINE 3.0/reports/goal3/audit/screenshots/mobile.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/goal3/audit/screenshots/tablet.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/goal3/audit/screenshots/desktop.png"
+  ],
+  "checks": {
+    "visual": {
+      "mobile": {
+        "width": 390,
+        "height": 844,
+        "horizontalOverflow": false,
+        "textCount": 39,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 0,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 51.2,
+            "text": "Design instructions agents can see."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 32,
+            "text": "Specific taste, encoded as rules."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 32,
+            "text": "Design decisions export cleanly."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 32,
+            "text": "Web, mobile, app UI, and identity workflows."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 32,
+            "text": "Specimens carry states, tokens, and accessibility."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 32,
+            "text": "Slop is named, shown, and rejected."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 32,
+            "text": "Render, screenshot, audit, then ship."
+          }
+        ]
+      },
+      "tablet": {
+        "width": 834,
+        "height": 1112,
+        "horizontalOverflow": false,
+        "textCount": 39,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 0,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 66.72,
+            "text": "Design instructions agents can see."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 37.53,
+            "text": "Specific taste, encoded as rules."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 37.53,
+            "text": "Design decisions export cleanly."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 37.53,
+            "text": "Web, mobile, app UI, and identity workflows."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 37.53,
+            "text": "Specimens carry states, tokens, and accessibility."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 37.53,
+            "text": "Slop is named, shown, and rejected."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 37.53,
+            "text": "Render, screenshot, audit, then ship."
+          }
+        ]
+      },
+      "desktop": {
+        "width": 1440,
+        "height": 1000,
+        "horizontalOverflow": false,
+        "textCount": 39,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 0,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 115.2,
+            "text": "Design instructions agents can see."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 64.8,
+            "text": "Specific taste, encoded as rules."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 64.8,
+            "text": "Design decisions export cleanly."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 64.8,
+            "text": "Web, mobile, app UI, and identity workflows."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 64.8,
+            "text": "Specimens carry states, tokens, and accessibility."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 64.8,
+            "text": "Slop is named, shown, and rejected."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 64.8,
+            "text": "Render, screenshot, audit, then ship."
+          }
+        ]
+      },
+      "reducedMotion": {
+        "declared": true
+      }
+    }
+  },
+  "recommendations": [
+    "ship"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "kind": "dzine.brand.identity",
+  "id": "dzine-3",
+  "name": "D-ZINE 3.0",
+  "positioning": "The AI-native design operating system for source-backed frontend and brand direction.",
+  "promise": "Renderable design intelligence agents can inspect, compile, generate, audit, and improve with review.",
+  "voice": {
+    "posture": "rigorous, direct, design-critical, builder-friendly",
+    "use": [
+      "specific implementation nouns",
+      "source-backed claims",
+      "clear critique language",
+      "plain open-source instructions"
+    ],
+    "avoid": [
+      "generic SaaS hype",
+      "fake traction",
+      "beauty claims without evidence",
+      "mystical AI language"
+    ]
+  },
+  "visualLanguage": {
+    "metaphors": [
+      "source documents",
+      "inspection panes",
+      "contract blocks",
+      "taste graph nodes",
+      "audit rails",
+      "critique annotations",
+      "source-to-output pipelines"
+    ],
+    "layoutBehaviors": [
+      "asymmetric proof-first composition",
+      "document-like inspection surfaces",
+      "visible source paths and command rails",
+      "few but meaningful cards",
+      "strong section tempo shifts"
+    ],
+    "graphicRules": [
+      "Use lines, rails, counters, and source labels as functional graphics.",
+      "Treat screenshots as evidence, not decoration.",
+      "Use critique colors only where the page is teaching acceptance or rejection.",
+      "Avoid decorative gradients unless they clarify depth or focus."
+    ]
+  },
+  "colorRoles": {
+    "ink": "primary inverse canvas and proof surfaces",
+    "porcelain": "document canvas and reading surfaces",
+    "oxide": "action, critique, source emphasis",
+    "moss": "accepted patterns and system support",
+    "signal": "registry, proof, and reference highlights"
+  },
+  "typePosture": {
+    "display": "compressed, high-confidence, editorial product headings",
+    "body": "plain, readable, documentation-safe",
+    "mono": "source paths, CLI commands, registry keys, audit reports"
+  },
+  "proofTreatment": [
+    "Commands appear near the claims they prove.",
+    "Screenshots are framed as generated evidence.",
+    "Reports and paths should be visible as product artifacts.",
+    "External counters need fallback states."
+  ],
+  "misuse": [
+    "Do not use abstract AI gradients as the main identity.",
+    "Do not rely on generic card grids for every section.",
+    "Do not invent metrics.",
+    "Do not copy reference systems or agency case studies.",
+    "Do not hide the source layer behind marketing copy."
+  ]
+}

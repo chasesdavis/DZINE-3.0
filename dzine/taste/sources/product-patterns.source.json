@@ -1,0 +1,21 @@
+{
+  "kind": "dzine.taste.source",
+  "id": "product-pattern-libraries",
+  "name": "Real Product Pattern Libraries",
+  "category": "pattern-library",
+  "provenance": [
+    { "label": "Mobbin", "url": "https://mobbin.com/", "use": "Real-world mobile and web product flow references." },
+    { "label": "Refero", "url": "https://refero.design/", "use": "Real interface and flow references for product UI benchmarking." },
+    { "label": "PageFlows", "url": "https://pageflows.com/", "use": "User-flow and interaction pattern research." },
+    { "label": "ScreensDesign", "url": "https://screensdesign.com/", "use": "Mobile screen reference and pattern discovery." },
+    { "label": "Design Systems Gallery", "url": "https://designsystem.gallery/", "use": "Discover public design systems and documentation references." },
+    { "label": "DesignSystems.one", "url": "https://www.designsystems.one/design-systems", "use": "Design system examples and breakdowns." }
+  ],
+  "licenseNotes": "Use as research and pattern analysis. Do not copy screenshots, product names, flows, or proprietary layouts into generated work without permission.",
+  "allowedUse": ["pattern benchmarking", "flow taxonomy", "anti-slop comparison", "screen anatomy research"],
+  "extractedSignals": [
+    "Real product references reveal how interfaces solve specific workflows, not just how marketing pages look.",
+    "D-ZINE should ask what job the screen performs before selecting a layout style.",
+    "Pattern references need critique labels: where the pattern works, when it fails, and what constraints make it appropriate."
+  ]
+}

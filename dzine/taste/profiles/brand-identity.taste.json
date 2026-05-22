@@ -1,0 +1,37 @@
+{
+  "kind": "dzine.taste.profile",
+  "id": "brand-identity",
+  "name": "Brand Identity",
+  "version": "0.1.0",
+  "status": "seed",
+  "description": "A profile for identity systems, brand kits, and visual languages that need coherent behavior beyond a logo and palette.",
+  "extends": [],
+  "sources": ["brand-agency-case-studies", "canonical-design-systems", "design-md-ecosystem"],
+  "contracts": ["anti-slop", "typography", "layout-rhythm", "product-proof"],
+  "licenseNotes": "Use case studies to understand systems behavior. Do not copy identities, marks, typography choices, art direction, or campaign assets.",
+  "allowedUse": ["brand kits", "identity systems", "visual language specs", "launch identity direction"],
+  "principles": [
+    "A brand identity needs behavior: typography, layout, voice, color roles, motion posture, and misuse rules.",
+    "Visual identity must survive many applications, not just a hero image.",
+    "Brand proof should include applied examples and anti-examples."
+  ],
+  "positiveExamples": ["A brand kit with usage, misuse, palette roles, typography behavior, and application examples."],
+  "antiPatterns": ["Logo plus palette only.", "Fake brand names with no strategy.", "Moodboard aesthetics without system rules."],
+  "typographyRules": ["Type choices must express posture and remain usable in product surfaces."],
+  "layoutRules": ["Identity pages should show applications across product, docs, social, and marketing contexts."],
+  "componentRules": ["Brand components need usage rules and constraints."],
+  "copyRules": ["Voice guidance should include examples and banned phrases."],
+  "screenshotNotes": ["Show multiple applications to prove the identity is reusable."],
+  "rubric": {
+    "pass": 84,
+    "elite": 93,
+    "categories": [
+      { "id": "brand-point-of-view", "weight": 22 },
+      { "id": "system-behavior", "weight": 22 },
+      { "id": "applications", "weight": 18 },
+      { "id": "misuse-rules", "weight": 14 },
+      { "id": "copy-voice", "weight": 12 },
+      { "id": "anti-slop", "weight": 12 }
+    ]
+  }
+}

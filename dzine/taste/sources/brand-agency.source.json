@@ -1,0 +1,25 @@
+{
+  "kind": "dzine.taste.source",
+  "id": "brand-agency-case-studies",
+  "name": "Brand and Agency Case Studies",
+  "category": "brand-agency",
+  "provenance": [
+    { "label": "Pentagram", "url": "https://www.pentagram.com/work", "use": "Brand systems, identity programs, typography, and campaign-scale design thinking." },
+    { "label": "COLLINS", "url": "https://www.wearecollins.com/work/", "use": "Brand transformation, systems thinking, and high-contrast identity behavior." },
+    { "label": "Instrument", "url": "https://www.instrument.com/work", "use": "Digital product and brand experiences." },
+    { "label": "Work & Co", "url": "https://work.co/clients/", "use": "Product strategy, digital experiences, and launch-quality execution." },
+    { "label": "DIA", "url": "https://dia.tv/work/", "use": "Motion-led identity systems and expressive typography." },
+    { "label": "Stripe", "url": "https://stripe.com/", "use": "Developer-product clarity, information architecture, and proof-led product storytelling." },
+    { "label": "Linear", "url": "https://linear.app/", "use": "Interface density, restraint, quality bar, and product posture." },
+    { "label": "Vercel", "url": "https://vercel.com/", "use": "Developer-product launch patterns, docs surfaces, and product proof." },
+    { "label": "Figma", "url": "https://www.figma.com/", "use": "Collaborative creative-product UI and community ecosystem patterns." },
+    { "label": "GitHub", "url": "https://github.com/", "use": "Open-source product flows, repo trust signals, and developer ergonomics." }
+  ],
+  "licenseNotes": "Use case studies to extract general principles and critique language. Do not clone visual identities, artwork, copy, proprietary layouts, logos, or brand assets.",
+  "allowedUse": ["principle extraction", "brand-system critique", "art-direction taxonomy", "proof pattern analysis"],
+  "extractedSignals": [
+    "Elite brand work has a point of view before it has components.",
+    "Top product sites prove the product through real surfaces, code, docs, or workflows.",
+    "Agency-level outcomes rely on strong constraints, not more decoration."
+  ]
+}

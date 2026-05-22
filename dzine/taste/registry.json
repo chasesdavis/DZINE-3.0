@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "0.1.0",
+  "kind": "dzine.taste.registry",
+  "name": "D-ZINE Taste Graph",
+  "description": "Source-backed taste profiles, contracts, and critique references for D-ZINE.",
+  "defaultProfile": "precision-product",
+  "sources": [
+    "sources/design-md.source.json",
+    "sources/canonical-systems.source.json",
+    "sources/product-patterns.source.json",
+    "sources/brand-agency.source.json"
+  ],
+  "profiles": [
+    "profiles/precision-product.taste.json",
+    "profiles/dzine-launch.taste.json",
+    "profiles/editorial-launch.taste.json",
+    "profiles/mobile-native.taste.json",
+    "profiles/brand-identity.taste.json"
+  ],
+  "contracts": [
+    "contracts/anti-slop.contract.json",
+    "contracts/typography.contract.json",
+    "contracts/layout-rhythm.contract.json",
+    "contracts/product-proof.contract.json"
+  ],
+  "critiques": [
+    "critiques/generic-saas-hero.critique.dzine.html",
+    "critiques/premium-product-shell.critique.dzine.html"
+  ],
+  "community": {
+    "directory": "community",
+    "policy": "Community taste packs must include provenance, license notes, allowed use, extracted principles, examples, anti-patterns, and a review status before being treated as trusted."
+  }
+}

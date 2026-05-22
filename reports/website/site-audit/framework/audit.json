@@ -1,0 +1,166 @@
+{
+  "file": "/Users/chase/Documents/DZINE 3.0/website/framework/index.html",
+  "target": "http://127.0.0.1:6203",
+  "score": 100,
+  "passed": true,
+  "findings": [],
+  "screenshots": [
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/framework/screenshots/mobile.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/framework/screenshots/tablet.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/framework/screenshots/desktop.png"
+  ],
+  "checks": {
+    "visual": {
+      "mobile": {
+        "width": 390,
+        "height": 844,
+        "horizontalOverflow": false,
+        "textCount": 63,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 10,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 51.2,
+            "text": "D-ZINE is a design runtime, not a prompt folder."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Every layer has a job, and every output stays traceable to source."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "TypeScript schemas make taste enforceable."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Single document commands and site-level commands work together."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "The public site shell is shared, while page bodies stay source-authored."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "The framework is designed to reject shallow design automation."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Goal 4 is only complete when the generated site passes."
+          }
+        ]
+      },
+      "tablet": {
+        "width": 834,
+        "height": 1112,
+        "horizontalOverflow": false,
+        "textCount": 63,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 10,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 51.708,
+            "text": "D-ZINE is a design runtime, not a prompt folder."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Every layer has a job, and every output stays traceable to source."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "TypeScript schemas make taste enforceable."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Single document commands and site-level commands work together."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "The public site shell is shared, while page bodies stay source-authored."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "The framework is designed to reject shallow design automation."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Goal 4 is only complete when the generated site passes."
+          }
+        ]
+      },
+      "desktop": {
+        "width": 1440,
+        "height": 1000,
+        "horizontalOverflow": false,
+        "textCount": 63,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 10,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 89.28,
+            "text": "D-ZINE is a design runtime, not a prompt folder."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Every layer has a job, and every output stays traceable to source."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "TypeScript schemas make taste enforceable."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Single document commands and site-level commands work together."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "The public site shell is shared, while page bodies stay source-authored."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "The framework is designed to reject shallow design automation."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Goal 4 is only complete when the generated site passes."
+          }
+        ]
+      },
+      "reducedMotion": {
+        "declared": true
+      }
+    }
+  },
+  "recommendations": [
+    "ship"
+  ]
+}

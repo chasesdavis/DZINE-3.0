@@ -1,0 +1,166 @@
+{
+  "file": "/Users/chase/Documents/DZINE 3.0/website/docs/index.html",
+  "target": "http://127.0.0.1:6201",
+  "score": 100,
+  "passed": true,
+  "findings": [],
+  "screenshots": [
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/docs/screenshots/mobile.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/docs/screenshots/tablet.png",
+    "/Users/chase/Documents/DZINE 3.0/reports/website/site-audit/docs/screenshots/desktop.png"
+  ],
+  "checks": {
+    "visual": {
+      "mobile": {
+        "width": 390,
+        "height": 844,
+        "horizontalOverflow": false,
+        "textCount": 80,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 18,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 51.2,
+            "text": "Build full websites with D-ZINE, not just single files."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "D-ZINE separates design intelligence from implementation output."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "A full site is config plus many D-ZINE page sources."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "The CLI turns source documents into usable product surfaces."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "How an AI agent should use D-ZINE to build a real product."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Anti-slop rules are operational, not inspirational."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 36,
+            "text": "Generated output is static, repo-friendly, and easy to host."
+          }
+        ]
+      },
+      "tablet": {
+        "width": 834,
+        "height": 1112,
+        "horizontalOverflow": false,
+        "textCount": 80,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 18,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 51.708,
+            "text": "Build full websites with D-ZINE, not just single files."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "D-ZINE separates design intelligence from implementation output."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "A full site is config plus many D-ZINE page sources."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "The CLI turns source documents into usable product surfaces."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "How an AI agent should use D-ZINE to build a real product."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Anti-slop rules are operational, not inspirational."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 40.032,
+            "text": "Generated output is static, repo-friendly, and easy to host."
+          }
+        ]
+      },
+      "desktop": {
+        "width": 1440,
+        "height": 1000,
+        "horizontalOverflow": false,
+        "textCount": 80,
+        "tinyText": [],
+        "lowContrast": [],
+        "controlCount": 18,
+        "smallTargets": [],
+        "sections": 7,
+        "headings": [
+          {
+            "tag": "h1",
+            "fontSize": 89.28,
+            "text": "Build full websites with D-ZINE, not just single files."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "D-ZINE separates design intelligence from implementation output."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "A full site is config plus many D-ZINE page sources."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "The CLI turns source documents into usable product surfaces."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "How an AI agent should use D-ZINE to build a real product."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Anti-slop rules are operational, not inspirational."
+          },
+          {
+            "tag": "h2",
+            "fontSize": 69.12,
+            "text": "Generated output is static, repo-friendly, and easy to host."
+          }
+        ]
+      },
+      "reducedMotion": {
+        "declared": true
+      }
+    }
+  },
+  "recommendations": [
+    "ship"
+  ]
+}

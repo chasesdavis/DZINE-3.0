@@ -1,0 +1,62 @@
+{
+  "name": "D-ZINE 3.0",
+  "title": "D-ZINE 3.0 Open Source Product Website",
+  "description": "A generated multi-page product launch website for the D-ZINE 3.0 AI-native design system framework.",
+  "outputDir": "website",
+  "theme": "dzine/theme.css",
+  "assets": ["dzine/assets"],
+  "github": {
+    "owner": "chasesdavis",
+    "repo": "DZINE-3.0",
+    "url": "https://github.com/chasesdavis/DZINE-3.0"
+  },
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Docs", "href": "/docs/" },
+    { "label": "Taste", "href": "/taste/" },
+    { "label": "Framework", "href": "/framework/" },
+    { "label": "Showcase", "href": "/showcase/" }
+  ],
+  "pages": [
+    {
+      "title": "D-ZINE 3.0",
+      "description": "The open-source AI design system framework built around renderable .dzine.html source files.",
+      "route": "/",
+      "source": "dzine/pages/home.dzine.html",
+      "navLabel": "Home",
+      "order": 1
+    },
+    {
+      "title": "D-ZINE Docs",
+      "description": "Detailed D-ZINE documentation for builders, design engineers, contributors, and AI agents.",
+      "route": "/docs/",
+      "source": "dzine/pages/docs.dzine.html",
+      "navLabel": "Docs",
+      "order": 2
+    },
+    {
+      "title": "D-ZINE Taste Graph",
+      "description": "The source-backed taste registry, profiles, contracts, and critique loop behind D-ZINE.",
+      "route": "/taste/",
+      "source": "dzine/pages/taste.dzine.html",
+      "navLabel": "Taste",
+      "order": 3
+    },
+    {
+      "title": "D-ZINE Framework",
+      "description": "The multi-page D-ZINE framework architecture, CLI, source format, and quality runtime.",
+      "route": "/framework/",
+      "source": "dzine/pages/framework.dzine.html",
+      "navLabel": "Framework",
+      "order": 4
+    },
+    {
+      "title": "D-ZINE Showcase",
+      "description": "Proof that D-ZINE can render, compile, export, screenshot, and audit itself.",
+      "route": "/showcase/",
+      "source": "dzine/pages/showcase.dzine.html",
+      "navLabel": "Showcase",
+      "order": 5
+    }
+  ]
+}

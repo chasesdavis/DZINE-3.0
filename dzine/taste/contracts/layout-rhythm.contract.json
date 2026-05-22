@@ -1,0 +1,14 @@
+{
+  "kind": "dzine.taste.contract",
+  "id": "layout-rhythm",
+  "name": "Layout Rhythm Contract",
+  "description": "Requires varied, purposeful section rhythm instead of repeated AI-card layouts.",
+  "severity": "major",
+  "rules": [
+    { "id": "section-variance", "weight": 18, "check": "sections should vary between narrative, proof, architecture, specimen, and critique patterns" },
+    { "id": "macro-whitespace", "weight": 14, "check": "premium layouts should use enough whitespace to create reading rhythm" },
+    { "id": "responsive-collapse", "weight": 16, "check": "asymmetric desktop layouts must collapse cleanly to mobile" },
+    { "id": "no-card-prison", "weight": 16, "check": "not every idea should be placed inside a same-sized card" }
+  ],
+  "remediation": "Mix architectural diagrams, proof media, dense docs panels, critique comparisons, and strong editorial sections instead of repeating equal cards."
+}

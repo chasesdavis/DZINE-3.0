@@ -1,0 +1,19 @@
+/goal Implement D-ZINE 3.0 Website from its canonical .dzine.html source.
+
+CONTEXT
+Source: /Users/chase/Documents/DZINE 3.0/dzine/pages/home.dzine.html
+Use .dzine.html as source of truth; Markdown is compatibility output only.
+
+TASK
+Build complete design/framework output from the parsed D-ZINE metadata, tokens, recipes, and quality gates.
+
+REQUIRED
+Modes: web, mobile, brand-kit
+Recipes: web-landing, mobile-app-flow, brand-kit
+Token branches: color, space, radius
+
+QUALITY
+No generic AI slop, no placeholder code, no missing states, no inaccessible motion, no Markdown-as-source drift.
+
+SUCCESS
+Build, verify, export prompt/tokens/CSS/Tailwind/Markdown, run audit, and prove every gate before stopping.

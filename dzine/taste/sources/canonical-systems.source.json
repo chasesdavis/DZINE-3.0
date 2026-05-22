@@ -1,0 +1,24 @@
+{
+  "kind": "dzine.taste.source",
+  "id": "canonical-design-systems",
+  "name": "Canonical Design Systems",
+  "category": "canonical-system",
+  "provenance": [
+    { "label": "Apple Human Interface Guidelines", "url": "https://developer.apple.com/design/human-interface-guidelines/", "use": "Platform-native interaction, restraint, hierarchy, accessibility, and motion principles." },
+    { "label": "Material Design", "url": "https://m3.material.io/", "use": "Systematic foundations, interaction states, adaptive UI, tokens, and component behavior." },
+    { "label": "IBM Carbon Design System", "url": "https://carbondesignsystem.com/", "use": "Enterprise-grade component documentation, accessibility, grid, and token discipline." },
+    { "label": "Shopify Polaris", "url": "https://polaris.shopify.com/", "use": "Product admin clarity, merchant-facing content, components, and experience guidance." },
+    { "label": "Microsoft Fluent", "url": "https://fluent2.microsoft.design/", "use": "Cross-platform product interaction, density, motion, and component conventions." },
+    { "label": "Adobe Spectrum", "url": "https://spectrum.adobe.com/", "use": "Creative tooling UI, tokenized foundations, and component anatomy." },
+    { "label": "Atlassian Design System", "url": "https://atlassian.design/", "use": "Collaboration product patterns, content guidance, and UI foundations." },
+    { "label": "GOV.UK Design System", "url": "https://design-system.service.gov.uk/", "use": "Plain-language, accessibility-first, task-completion design." },
+    { "label": "Design Tokens Community Group", "url": "https://github.com/design-tokens", "use": "Token interoperability and design token standards." }
+  ],
+  "licenseNotes": "Reference public guidelines and APIs. Do not redistribute protected assets. Respect each system's brand and licensing terms.",
+  "allowedUse": ["principle extraction", "accessibility baselines", "component anatomy comparison", "token structure inspiration"],
+  "extractedSignals": [
+    "Taste is not decoration; it includes platform expectations, accessibility, content, states, and component behavior.",
+    "Strong systems document foundations before components.",
+    "Premium execution uses repeatable constraints: grid, tokens, density, state coverage, and motion rules."
+  ]
+}

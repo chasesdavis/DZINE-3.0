@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" data-dzine-version="3.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The multi-page D-ZINE framework architecture, CLI, source format, and quality runtime." />
+    <meta property="og:title" content="D-ZINE Framework" />
+    <meta property="og:description" content="The multi-page D-ZINE framework architecture, CLI, source format, and quality runtime." />
+    <meta property="og:image" content="../assets/dzine-showcase-desktop.png" />
+    <title>D-ZINE Framework - D-ZINE 3.0</title>
+    <link rel="stylesheet" href="../theme.css" />
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.001ms !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+    </style>
+    <script type="application/dzine+json" id="dzine-root">
+      { "schemaVersion": "3.0.0", "kind": "dzine.document", "title": "D-ZINE 3.0 Framework", "description": "Architecture page for the D-ZINE framework.", "modes": ["web", "mobile", "app", "brand-kit"], "visualDialect": "precision-product", "sourceFormat": ".dzine.html", "createdBy": "D-ZINE", "quality": { "profile": "elite", "auditLevel": "strict", "antiSlopPolicy": "fail-on-critical" }, "exports": ["prompt", "tokens", "css", "tailwind", "markdown"] }
+    </script>
+<script type="application/dzine+json" id="dzine-brief">
+      { "kind": "dzine.brief", "project": "D-ZINE Framework Page", "audience": ["contributors", "agent builders", "design engineers"], "platforms": ["web"], "objective": "Explain the framework architecture and prove D-ZINE is a programming system, not a prompt folder.", "constraints": ["Be technical", "Stay accessible", "Expose architecture decisions"], "successCriteria": ["Architecture is clear", "CLI role is clear", "Project model is clear"] }
+    </script>
+<script type="application/dzine+json" id="dzine-dna">
+      { "kind": "dzine.designDNA", "density": 7, "variance": 7, "motion": 2, "imagePriority": 6, "brandPosture": "technical and serious", "copyPosture": "specific and implementation-aware", "visualDialect": "precision-product", "bannedPatterns": ["vague-framework-copy", "missing-architecture", "generic-ai-language"], "requiredStates": ["default", "hover", "focus", "error"] }
+    </script>
+<script type="application/dzine+json" id="dzine-tokens">
+      { "kind": "dzine.tokens", "format": "dtcg", "tokens": { "color": { "background": { "canvas": { "$type": "color", "$value": "#f4efe6" }, "inverse": { "$type": "color", "$value": "#11100e" } }, "text": { "primary": { "$type": "color", "$value": "#17130f" }, "inverse": { "$type": "color", "$value": "#fffaf1" } }, "accent": { "primary": { "$type": "color", "$value": "#c7472c" }, "support": { "$type": "color", "$value": "#526a55" } } }, "radius": { "panel": { "$type": "dimension", "$value": "24px" } } } }
+    </script>
+<script type="application/dzine+json" id="dzine-recipes">
+      { "kind": "dzine.recipes", "recipes": [{ "id": "framework-architecture", "mode": "web", "description": "Framework architecture explanation.", "sections": ["runtime", "parser", "compiler", "generator", "audit"], "requiredStates": ["default", "hover", "focus"], "imagePolicy": "use diagrams and generated proof", "acceptanceGates": ["technical-clarity", "contrast-aa", "responsive"] }] }
+    </script>
+<script type="application/dzine+json" id="dzine-rubric">
+      { "kind": "dzine.rubric", "scoring": { "scale": 100, "pass": 85, "elite": 92 }, "categories": [{ "id": "architecture", "weight": 25 }, { "id": "clarity", "weight": 20 }, { "id": "developer-experience", "weight": 20 }, { "id": "accessibility", "weight": 15 }, { "id": "anti-slop", "weight": 20 }], "criticalFailures": ["missing-architecture", "unreadable-text", "generic-framework"] }
+    </script>
+  </head>
+  <body data-route="/framework/">
+    <header class="site-header">
+      <a class="brand" href="../">
+        <span class="brand-mark">D</span>
+        <span>D-ZINE 3.0</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="../">Home</a>
+        <a href="../docs/">Docs</a>
+        <a href="../taste/">Taste</a>
+        <a href="../framework/" aria-current="page">Framework</a>
+        <a href="../showcase/">Showcase</a>
+      </nav>
+      <a class="github-pill" href="https://github.com/chasesdavis/DZINE-3.0" data-github-stars data-owner="chasesdavis" data-repo="DZINE-3.0" aria-label="Open GitHub repository">
+        <span class="github-mark" aria-hidden="true">★</span>
+        <span data-star-label>GitHub</span>
+      </a>
+    </header>
+    <section class="hero compact" data-dzine-section="overview">
+        <div class="hero-copy">
+          <p class="eyebrow">Framework</p>
+          <h1>D-ZINE is a design runtime, not a prompt folder.</h1>
+          <p class="lede">The framework parses renderable source, validates design metadata, compiles agent prompts, exports tokens, generates multi-page websites, and audits visual output.</p>
+          <div class="actions"><a class="button primary" href="../docs/">Read docs</a><a class="button secondary" href="../showcase/">View proof</a></div>
+        </div>
+        <div class="hero-stage">
+          <figure class="product-window">
+            <figcaption class="window-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>D-ZINE runtime modules</span></figcaption>
+            <pre class="code">src/
+  parser/      parse .dzine.html
+  compiler/    produce agent prompts
+  exporters/   tokens, CSS, Tailwind, goals
+  preview/     screenshots and visual QA
+  site/        multi-page generation
+  taste/       source-backed taste contracts</pre>
+          </figure>
+        </div>
+      </section>
+
+      <section data-dzine-section="design-dna">
+        <div class="section-head">
+          <div><p class="eyebrow">Runtime architecture</p><h2>Every layer has a job, and every output stays traceable to source.</h2></div>
+          <p>The framework keeps visual intent, machine-readable metadata, generated implementation assets, and QA evidence connected.</p>
+        </div>
+        <div class="architecture">
+          <article class="node"><span class="node-label">Parse</span><h3>HTML plus JSON</h3><p>The parser validates doctype, version, root metadata, briefs, DNA, tokens, recipes, rubrics, sections, specimens, and anti-patterns.</p></article>
+          <article class="node center"><span class="node-label">Generate</span><h3>Routes and exports</h3><p>The site runtime composes page sources into static routes while single-document exporters produce prompt and token artifacts.</p></article>
+          <article class="node"><span class="node-label">Verify</span><h3>Audit evidence</h3><p>The audit loop captures responsive screenshots, checks technical quality, and now evaluates taste contracts from the active profile.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="tokens">
+        <div class="section-head">
+          <div><p class="eyebrow">Data model</p><h2>TypeScript schemas make taste enforceable.</h2></div>
+          <p>D-ZINE uses typed interfaces and schemas for documents, briefs, visual DNA, recipes, token sets, components, anti-patterns, rubrics, reports, and site config.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><h3>Document</h3><p>Root metadata, visible HTML, parsed JSON blocks, diagnostics, and audit-ready structure.</p></article>
+          <article class="card"><h3>Tokens</h3><p>DTCG-compatible token trees for color, spacing, radius, and future theme modes.</p></article>
+          <article class="card"><h3>Site</h3><p>Project config, routes, source paths, assets, shared theme, navigation, and GitHub repo metadata.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="recipes" data-dzine-recipe="framework-architecture">
+        <div class="section-head">
+          <div><p class="eyebrow">CLI surface</p><h2>Single document commands and site-level commands work together.</h2></div>
+          <p>Single-document commands remain useful for focused agent work. Site commands orchestrate the full generated product website.</p>
+        </div>
+        <div class="flow">
+          <article class="step"><span class="step-num">01</span><h3>compile</h3><p>Turns one source file into an agent-ready prompt.</p></article>
+          <article class="step"><span class="step-num">02</span><h3>export</h3><p>Writes tokens, CSS variables, Tailwind config, goal prompt, and compatibility Markdown.</p></article>
+          <article class="step"><span class="step-num">03</span><h3>site build</h3><p>Generates every configured route into the static website output folder.</p></article>
+          <article class="step"><span class="step-num">04</span><h3>taste audit</h3><p>Scores generated source against provenance, proof, typography, rhythm, and anti-slop contracts.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="components">
+        <div class="section-head">
+          <div><p class="eyebrow">Generated shell</p><h2>The public site shell is shared, while page bodies stay source-authored.</h2></div>
+          <p>The generator extracts each page's main content and D-ZINE JSON, then wraps it in a shared header, nav, GitHub star pill, stylesheet, footer, and progressive enhancement script.</p>
+        </div>
+        <div class="specimen">
+          <article class="specimen-panel"><h3>Header contract</h3><p>The header must include brand, route navigation, current-page state, and a live GitHub star pill with a graceful fallback.</p><div class="state-list"><span>default</span><span>hover</span><span>focus</span><span>fallback</span></div></article>
+          <pre class="code">&lt;a class="github-pill"
+  data-github-stars
+  data-owner="chasesdavis"
+  data-repo="DZINE-3.0"&gt;
+  &lt;span data-star-label&gt;GitHub&lt;/span&gt;
+&lt;/a&gt;</pre>
+        </div>
+        <template data-dzine-component="github-star-pill" data-platform="web" data-tokens="color.background.inverse,color.text.inverse" data-states="default,loading,loaded,error,focus" data-accessibility="normal link fallback,44px target,visible text">
+          <a class="github-pill" href="https://github.com/chasesdavis/DZINE-3.0">GitHub</a>
+        </template>
+      </section>
+
+      <section data-dzine-section="anti-patterns">
+        <div class="section-head">
+          <div><p class="eyebrow">Failure modes</p><h2>The framework is designed to reject shallow design automation.</h2></div>
+          <p>D-ZINE should fail loudly when an artifact loses structure, accessibility, responsiveness, or design specificity.</p>
+        </div>
+        <div class="compare">
+          <article class="card reject" data-dzine-antipattern="single-file-dead-end" data-severity="major"><h3>Rejected</h3><p>A design system that proves one impressive page but cannot generate a complete website, docs section, or reusable routes.</p></article>
+          <article class="card prefer"><h3>Preferred</h3><p>A project model that scales from one source document to a route tree, docs, generated assets, and route-by-route QA.</p></article>
+        </div>
+      </section>
+
+      <section data-dzine-section="quality-gates">
+        <div class="section-head">
+          <div><p class="eyebrow">Verification</p><h2>Goal 4 is only complete when the generated site passes.</h2></div>
+          <p>The framework must build, generate routes, audit each page, and keep the generated website static-host friendly.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><h3>Build gate</h3><p>TypeScript compilation and tests must pass.</p></article>
+          <article class="card"><h3>Route gate</h3><p>Home, docs, framework, and showcase routes must be generated.</p></article>
+          <article class="card"><h3>Audit gate</h3><p>Each generated route must pass document and visual audit.</p></article>
+        </div>
+      </section>
+    <footer class="footer">
+      <span>D-ZINE 3.0 - generated from page-level .dzine.html sources.</span>
+      <a href="../docs/">Read the docs</a>
+    </footer>
+    <script>
+      (() => {
+        const pill = document.querySelector("[data-github-stars]");
+        const label = document.querySelector("[data-star-label]");
+        if (!pill || !label) return;
+        const owner = pill.getAttribute("data-owner");
+        const repo = pill.getAttribute("data-repo");
+        if (!owner || !repo) return;
+        fetch(`https://api.github.com/repos/${owner}/${repo}`, { headers: { "Accept": "application/vnd.github+json" } })
+          .then((response) => response.ok ? response.json() : Promise.reject(new Error("GitHub unavailable")))
+          .then((data) => {
+            const stars = typeof data.stargazers_count === "number" ? data.stargazers_count : 0;
+            label.textContent = new Intl.NumberFormat().format(stars) + " stars";
+          })
+          .catch(() => {
+            label.textContent = "GitHub";
+          });
+      })();
+    </script>
+  </body>
+</html>

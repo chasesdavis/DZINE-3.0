@@ -1,0 +1,9 @@
+{
+  "id": "web-landing",
+  "mode": "web",
+  "description": "Premium section-by-section landing page direction for conversion-aware websites.",
+  "sections": ["hero", "proof", "feature-system", "product-view", "conversion", "final-cta"],
+  "requiredStates": ["default", "hover", "focus", "loading", "empty", "error"],
+  "imagePolicy": "one-reference-per-section",
+  "acceptanceGates": ["contrast-aa", "no-horizontal-scroll", "anti-slop-critical", "first-viewport-clear"]
+}

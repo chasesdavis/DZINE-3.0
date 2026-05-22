@@ -1,0 +1,69 @@
+{
+  "kind": "dzine.taste.profile",
+  "id": "dzine-launch",
+  "name": "D-ZINE Launch",
+  "version": "0.1.0",
+  "status": "local",
+  "description": "A D-ZINE-specific launch profile for source-backed AI design systems, taste contracts, inspection surfaces, and open-source proof.",
+  "extends": ["precision-product"],
+  "sources": ["design-md-ecosystem", "canonical-design-systems", "product-pattern-libraries", "brand-agency-case-studies"],
+  "contracts": ["anti-slop", "typography", "layout-rhythm", "product-proof"],
+  "licenseNotes": "Uses source-backed principles and D-ZINE-owned identity rules. Does not copy protected design systems, product surfaces, or agency case-study visuals.",
+  "allowedUse": ["D-ZINE product website", "D-ZINE docs", "D-ZINE examples", "D-ZINE brand and launch materials"],
+  "principles": [
+    "The source layer is the brand: show documents, paths, contracts, commands, audits, and critique artifacts.",
+    "Every claim should feel inspectable by an engineer and legible to a designer.",
+    "The website should behave like an operating manual with moments of editorial force.",
+    "Use proof rails and contract blocks instead of generic feature cards.",
+    "Taste is framed as provenance plus critique, not personal mystique."
+  ],
+  "positiveExamples": [
+    "A hero that stages the generated source artifact and taste registry as product evidence.",
+    "A Taste Graph page that explains sources, contracts, community review, and guarded learning.",
+    "A docs route that teaches agents and humans where to look before implementing."
+  ],
+  "antiPatterns": [
+    "Generic dark hero plus beige cards.",
+    "Rounded card grid as the only layout idea.",
+    "Terminal visuals used as fake developer credibility.",
+    "Taste claims with no source URLs or audit commands.",
+    "Brand identity that could belong to any AI tool."
+  ],
+  "typographyRules": [
+    "Use display type for critique-grade statements, not every small panel.",
+    "Use body text for precise instructions and source-backed explanation.",
+    "Use mono text as evidence: source paths, registry keys, commands, and report locations."
+  ],
+  "layoutRules": [
+    "Lead sections should combine claim, proof rail, and source artifact.",
+    "Alternate inspection panes, contract rails, critique comparisons, and docs panels.",
+    "Use fewer repeated cards; prefer named artifacts and process diagrams.",
+    "Mobile should feel like a designed document stack, not a compressed desktop."
+  ],
+  "componentRules": [
+    "GitHub stars pill must remain a normal link with fallback text.",
+    "Taste profile cards must include status and provenance.",
+    "Proof cards must reference actual repo files, commands, routes, or reports."
+  ],
+  "copyRules": [
+    "Say where taste comes from before claiming taste.",
+    "Use product-specific nouns: registry, profile, contract, critique, audit, source, route, screenshot.",
+    "Avoid broad supremacy claims unless tied to a visible proof artifact."
+  ],
+  "screenshotNotes": [
+    "Screenshots should expose the source-to-output loop.",
+    "Review mobile screenshots for document-stack rhythm and not just pass/fail overflow."
+  ],
+  "rubric": {
+    "pass": 84,
+    "elite": 93,
+    "categories": [
+      { "id": "identity-specificity", "weight": 18 },
+      { "id": "source-layer-proof", "weight": 18 },
+      { "id": "taste-provenance", "weight": 16 },
+      { "id": "layout-variance", "weight": 16 },
+      { "id": "docs-and-community", "weight": 14 },
+      { "id": "anti-slop", "weight": 18 }
+    ]
+  }
+}

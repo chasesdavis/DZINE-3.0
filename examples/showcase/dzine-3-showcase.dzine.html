@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en" data-dzine-version="3.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>D-ZINE 3.0 Showcase</title>
+    <style>
+      :root {
+        --canvas: #f8f4ec;
+        --ink: #161411;
+        --muted: #5d574f;
+        --line: rgba(22, 20, 17, 0.16);
+        --surface: rgba(255, 252, 246, 0.82);
+        --accent: #9b3f2f;
+        --accent-dark: #743025;
+        --soft: #e8dfcf;
+        --sage: #687663;
+        --mono: "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 88% 4%, rgba(104, 118, 99, 0.18), transparent 34rem),
+          linear-gradient(135deg, #f8f4ec 0%, #eee5d6 100%);
+        color: var(--ink);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image:
+          linear-gradient(rgba(22, 20, 17, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(22, 20, 17, 0.035) 1px, transparent 1px);
+        background-size: 36px 36px;
+        mask-image: linear-gradient(to bottom, black, transparent 82%);
+      }
+
+      main {
+        width: min(1180px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 40px 0 72px;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 64px;
+        border-bottom: 1px solid var(--line);
+        font-family: var(--mono);
+        font-size: 0.875rem;
+        color: var(--muted);
+      }
+
+      .nav {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+      }
+
+      .mark {
+        color: var(--ink);
+        font-weight: 800;
+        letter-spacing: 0.04em;
+      }
+
+      section {
+        padding: clamp(48px, 8vw, 104px) 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .hero {
+        min-height: 78dvh;
+        display: grid;
+        grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+        gap: clamp(32px, 6vw, 84px);
+        align-items: center;
+      }
+
+      h1 {
+        max-width: 900px;
+        margin: 0;
+        font-size: clamp(3.2rem, 8vw, 7.8rem);
+        line-height: 0.9;
+        letter-spacing: -0.055em;
+      }
+
+      h2 {
+        margin: 0 0 18px;
+        font-size: clamp(2rem, 4.5vw, 4.7rem);
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+        max-width: 760px;
+      }
+
+      h3 {
+        margin: 0 0 10px;
+        font-size: 1.2rem;
+        line-height: 1.15;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.68;
+      }
+
+      p {
+        max-width: 70ch;
+      }
+
+      .lede {
+        margin: 24px 0 0;
+        font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+        max-width: 58ch;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        min-width: 48px;
+        margin-top: 30px;
+        padding: 0 24px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #fffaf2;
+        font-weight: 800;
+        text-decoration: none;
+        box-shadow: 0 18px 36px rgba(116, 48, 37, 0.22);
+      }
+
+      .artifact {
+        display: grid;
+        gap: 14px;
+        padding: clamp(20px, 3vw, 32px);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: var(--surface);
+        box-shadow: 0 24px 72px rgba(47, 39, 28, 0.12);
+      }
+
+      .artifact-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      .specimen {
+        min-height: 150px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 20px;
+        background: #fffaf2;
+      }
+
+      .specimen.dark {
+        background: var(--ink);
+        color: #fffaf2;
+      }
+
+      .specimen.dark p {
+        color: #e8dfcf;
+      }
+
+      .kicker {
+        margin-bottom: 18px;
+        font-family: var(--mono);
+        color: var(--accent-dark);
+        font-size: 0.875rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .tile {
+        grid-column: span 4;
+        min-height: 180px;
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--surface);
+      }
+
+      .tile.wide {
+        grid-column: span 7;
+      }
+
+      .tile.tall {
+        grid-column: span 5;
+        min-height: 320px;
+      }
+
+      .token-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 24px;
+      }
+
+      .swatch {
+        min-width: 170px;
+        min-height: 118px;
+        display: grid;
+        align-content: end;
+        padding: 18px;
+        border-radius: 20px;
+        border: 1px solid var(--line);
+        font-family: var(--mono);
+      }
+
+      .ink {
+        background: var(--ink);
+        color: #fffaf2;
+      }
+
+      .accent {
+        background: var(--accent);
+        color: #fffaf2;
+      }
+
+      .sage {
+        background: var(--sage);
+        color: #fffaf2;
+      }
+
+      .soft {
+        background: var(--soft);
+      }
+
+      .comparison {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .bad {
+        border-color: rgba(155, 63, 47, 0.44);
+        background: #f2ded6;
+      }
+
+      .good {
+        border-color: rgba(104, 118, 99, 0.44);
+        background: #e9ecdf;
+      }
+
+      code {
+        font-family: var(--mono);
+        font-size: 0.95rem;
+        color: var(--accent-dark);
+      }
+
+      @media (max-width: 820px) {
+        main {
+          width: min(100% - 28px, 680px);
+        }
+
+        header,
+        .nav,
+        .hero,
+        .artifact-row,
+        .comparison {
+          grid-template-columns: 1fr;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .hero {
+          min-height: auto;
+          padding-top: 40px;
+        }
+
+        .tile,
+        .tile.wide,
+        .tile.tall {
+          grid-column: 1 / -1;
+          min-height: 160px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.001ms !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+    </style>
+    <script type="application/dzine+json" id="dzine-root">
+      {
+        "schemaVersion": "3.0.0",
+        "kind": "dzine.document",
+        "title": "D-ZINE 3.0 Showcase",
+        "description": "A complete renderable instruction document proving D-ZINE can carry visual direction, metadata, recipes, tokens, QA gates, and agent prompts from one source.",
+        "modes": ["web", "mobile", "app", "brand-kit", "brand-identity"],
+        "visualDialect": "precision-product",
+        "sourceFormat": ".dzine.html",
+        "createdBy": "D-ZINE",
+        "quality": { "profile": "elite", "auditLevel": "strict", "antiSlopPolicy": "fail-on-critical" },
+        "exports": ["prompt", "tokens", "css", "tailwind", "markdown"]
+      }
+    </script>
+    <script type="application/dzine+json" id="dzine-brief">
+      {
+        "kind": "dzine.brief",
+        "project": "D-ZINE 3.0",
+        "audience": ["AI coding agents", "design engineers", "brand teams", "founders"],
+        "platforms": ["web", "mobile", "app", "brand-kit", "brand-identity"],
+        "objective": "Prove a renderable HTML instruction format can outperform static Markdown skills for design direction.",
+        "constraints": ["Use .dzine.html as canonical source", "Export agent prompts and tokens", "Audit rendered visuals", "Preserve accessibility"],
+        "successCriteria": ["Preview renders", "Screenshots are captured", "Visual audit passes", "Recipes cover web, mobile, and brand identity"]
+      }
+    </script>
+    <script type="application/dzine+json" id="dzine-dna">
+      {
+        "kind": "dzine.designDNA",
+        "density": 4,
+        "variance": 8,
+        "motion": 5,
+        "imagePriority": 7,
+        "brandPosture": "precise, confident, restrained",
+        "copyPosture": "specific, direct, low-hype",
+        "visualDialect": "precision-product",
+        "bannedPatterns": ["ai-purple-gradient", "centered-hero-repetition", "three-equal-card-row", "generic-saas-copy", "nested-card-prison", "meaningless-pill-clutter", "unreadable-tiny-text", "inaccessible-motion"],
+        "requiredStates": ["default", "hover", "active", "focus", "disabled", "loading", "empty", "error", "success"]
+      }
+    </script>
+    <script type="application/dzine+json" id="dzine-tokens">
+      {
+        "kind": "dzine.tokens",
+        "format": "dtcg",
+        "tokens": {
+          "color": {
+            "background": { "canvas": { "$type": "color", "$value": "#f8f4ec", "$description": "Warm editorial canvas" }, "surface": { "$type": "color", "$value": "#fffaf2" } },
+            "text": { "primary": { "$type": "color", "$value": "#161411" }, "secondary": { "$type": "color", "$value": "#5d574f" } },
+            "accent": { "primary": { "$type": "color", "$value": "#9b3f2f" }, "support": { "$type": "color", "$value": "#687663" } },
+            "border": { "soft": { "$type": "color", "$value": "rgba(22, 20, 17, 0.16)" } }
+          },
+          "space": {
+            "4": { "$type": "dimension", "$value": "1rem" },
+            "8": { "$type": "dimension", "$value": "2rem" },
+            "12": { "$type": "dimension", "$value": "3rem" },
+            "24": { "$type": "dimension", "$value": "6rem" }
+          },
+          "radius": {
+            "control": { "$type": "dimension", "$value": "999px" },
+            "panel": { "$type": "dimension", "$value": "22px" },
+            "display": { "$type": "dimension", "$value": "28px" }
+          },
+          "motion": {
+            "productive": { "$type": "duration", "$value": "180ms" },
+            "expressive": { "$type": "duration", "$value": "520ms" }
+          }
+        }
+      }
+    </script>
+    <script type="application/dzine+json" id="dzine-recipes">
+      {
+        "kind": "dzine.recipes",
+        "recipes": [
+          { "id": "web-landing", "mode": "web", "description": "Premium section-by-section landing page direction.", "sections": ["hero", "proof", "feature-system", "product-view", "conversion", "final-cta"], "requiredStates": ["default", "hover", "focus", "loading", "empty", "error"], "imagePolicy": "one-reference-per-section", "acceptanceGates": ["contrast-aa", "no-horizontal-scroll", "anti-slop-critical", "first-viewport-clear"] },
+          { "id": "mobile-app-flow", "mode": "mobile", "description": "Platform-aware mobile flow direction.", "sections": ["onboarding", "home", "detail-or-action", "settings-or-completion"], "requiredStates": ["default", "pressed", "focus", "loading", "empty", "error", "success"], "imagePolicy": "one-phone-screen-per-step", "acceptanceGates": ["touch-target-size", "safe-area-aware", "no-phone-sized-website", "text-readable"] },
+          { "id": "brand-kit", "mode": "brand-kit", "description": "Identity board direction with logo concept, construction, tokens, applications, and image world.", "sections": ["logo-cover", "logo-concept", "construction", "color", "typography", "digital-application", "physical-application", "image-direction", "system-detail"], "requiredStates": ["overview", "usage", "misuse"], "imagePolicy": "single-board-plus-detail-panels", "acceptanceGates": ["symbolic-logo", "role-based-palette", "applications-prove-system", "no-generic-startup-language"] }
+        ]
+      }
+    </script>
+    <script type="application/dzine+json" id="dzine-rubric">
+      {
+        "kind": "dzine.rubric",
+        "scoring": { "scale": 100, "pass": 85, "elite": 92 },
+        "categories": [
+          { "id": "hierarchy", "weight": 15 },
+          { "id": "spacing", "weight": 12 },
+          { "id": "tokens", "weight": 10 },
+          { "id": "accessibility", "weight": 15 },
+          { "id": "responsive", "weight": 12 },
+          { "id": "motion", "weight": 8 },
+          { "id": "anti-slop", "weight": 18 },
+          { "id": "system-reuse", "weight": 10 }
+        ],
+        "criticalFailures": ["unreadable-text", "missing-focus-state", "horizontal-scroll-mobile", "generic-ai-gradient", "missing-required-json"]
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="mark">D-ZINE 3.0</span>
+        <div class="nav">
+          <span>Format</span>
+          <span>Recipes</span>
+          <span>Audit</span>
+        </div>
+      </header>
+
+      <section class="hero" data-dzine-section="overview">
+        <div>
+          <div class="kicker">Renderable agent design system</div>
+          <h1>Design instructions agents can see.</h1>
+          <p class="lede">D-ZINE turns design strategy into a browser-rendered source file with structured metadata, token exports, component specimens, recipes, and visual quality gates.</p>
+          <span class="button">Compile the source</span>
+        </div>
+        <div class="artifact" aria-label="D-ZINE artifact preview">
+          <div class="artifact-row">
+            <div class="specimen dark">
+              <h3>.dzine.html</h3>
+              <p>One source for human review, agent parsing, and visual inspection.</p>
+            </div>
+            <div class="specimen">
+              <h3>JSON metadata</h3>
+              <p>Design DNA, tokens, recipes, gates, and rubrics stay machine-readable.</p>
+            </div>
+          </div>
+          <div class="specimen">
+            <h3>Preview plus audit</h3>
+            <p>Rendered screenshots expose layout, contrast, target size, and responsive behavior before an agent ships code.</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-dzine-section="design-dna">
+        <div class="kicker">Design DNA</div>
+        <h2>Specific taste, encoded as rules.</h2>
+        <p>D-ZINE uses density, variance, motion, image priority, brand posture, copy posture, and banned patterns to make quality reproducible across agents and platforms.</p>
+        <div class="grid">
+          <article class="tile wide">
+            <h3>Top-company restraint</h3>
+            <p>Whitespace, text fit, focus states, and direct copy are part of the visual system rather than afterthoughts.</p>
+          </article>
+          <article class="tile tall">
+            <h3>Agent-readable design DNA</h3>
+            <p>JSON blocks carry the design contract while this rendered page gives vision-capable agents the spatial instruction layer Markdown cannot provide.</p>
+          </article>
+        </div>
+      </section>
+
+      <section data-dzine-section="tokens">
+        <div class="kicker">Tokens</div>
+        <h2>Design decisions export cleanly.</h2>
+        <p>The same source emits DTCG-style tokens, CSS variables, Tailwind fragments, prompt text, and compatibility Markdown.</p>
+        <div class="token-row">
+          <div class="swatch ink">Ink<br />#161411</div>
+          <div class="swatch accent">Accent<br />#9b3f2f</div>
+          <div class="swatch sage">Support<br />#687663</div>
+          <div class="swatch soft">Surface<br />#e8dfcf</div>
+        </div>
+      </section>
+
+      <section data-dzine-section="recipes" data-dzine-recipe="web-landing">
+        <div class="kicker">Recipes</div>
+        <h2>Web, mobile, app UI, and identity workflows.</h2>
+        <div class="grid">
+          <article class="tile">
+            <h3>Web landing</h3>
+            <p>Section-level direction with clear conversion flow, purposeful imagery, and first-viewport discipline.</p>
+          </article>
+          <article class="tile">
+            <h3>Mobile app flow</h3>
+            <p>Safe areas, native navigation, readable text, and touch targets are built into the contract.</p>
+          </article>
+          <article class="tile">
+            <h3>Brand kit</h3>
+            <p>Logo logic, color roles, typography, applications, and image direction prove an identity can scale.</p>
+          </article>
+        </div>
+      </section>
+
+      <section data-dzine-section="components">
+        <div class="kicker">Components</div>
+        <h2>Specimens carry states, tokens, and accessibility.</h2>
+        <p>A component example is not just decoration. It declares states, token dependencies, and the behavior an implementation agent must preserve.</p>
+        <div class="comparison">
+          <article class="specimen good">
+            <h3>Good specimen</h3>
+            <p>Primary action uses a role token, 48px minimum target, focus requirement, and state matrix.</p>
+            <span class="button">Request access</span>
+          </article>
+          <article class="specimen">
+            <h3>State matrix</h3>
+            <p>Default, hover, active, focus, disabled, loading, empty, error, and success states are required for app surfaces.</p>
+          </article>
+        </div>
+        <template data-dzine-component="primary-action" data-platform="web" data-tokens="color.accent.primary,radius.control,motion.productive" data-states="default,hover,active,focus,disabled,loading" data-accessibility="48px target,visible focus,reduced motion">
+          <button class="button">Request access</button>
+        </template>
+      </section>
+
+      <section data-dzine-section="anti-patterns">
+        <div class="kicker">Anti-patterns</div>
+        <h2>Slop is named, shown, and rejected.</h2>
+        <div class="comparison">
+          <article class="specimen bad" data-dzine-antipattern="three-equal-card-row" data-severity="major">
+            <h3>Rejected pattern</h3>
+            <p>Defaulting every feature section to identical cards makes the page feel generated rather than designed.</p>
+          </article>
+          <article class="specimen good">
+            <h3>Preferred response</h3>
+            <p>Use a recipe-specific section rhythm with asymmetric grouping, clear hierarchy, and mobile collapse rules.</p>
+          </article>
+        </div>
+      </section>
+
+      <section data-dzine-section="quality-gates">
+        <div class="kicker">Quality gates</div>
+        <h2>Render, screenshot, audit, then ship.</h2>
+        <p>The Goal 3 workflow captures mobile, tablet, and desktop screenshots, checks responsive overflow, contrast samples, target sizes, reduced-motion declarations, section completeness, and visible text sizing.</p>
+        <ul>
+          <li><code>dzine screenshot</code> captures viewport evidence.</li>
+          <li><code>dzine audit --visual</code> writes JSON and Markdown reports.</li>
+          <li><code>dzine export --target all</code> proves the source compiles into agent and framework artifacts.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

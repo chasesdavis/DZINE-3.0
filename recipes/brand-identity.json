@@ -1,0 +1,9 @@
+{
+  "id": "brand-identity",
+  "mode": "brand-identity",
+  "description": "Deeper identity-system direction for positioning, mark behavior, UI behavior, and campaigns.",
+  "sections": ["positioning", "tone", "symbol-logic", "color-and-type", "ui-behavior", "campaign-behavior"],
+  "requiredStates": ["core", "extension", "misuse"],
+  "imagePolicy": "identity-system-doc-plus-application-frames",
+  "acceptanceGates": ["identity-scales", "strategy-linked-visuals", "no-placeholder-brand"]
+}

@@ -1,0 +1,71 @@
+{
+  "name": "dzine",
+  "version": "0.1.0",
+  "description": "D-ZINE 3.0: an AI-native design framework and renderable .dzine.html instruction format.",
+  "license": "MIT",
+  "author": "Chase",
+  "homepage": "https://github.com/chasesdavis/DZINE-3.0#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chasesdavis/DZINE-3.0.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chasesdavis/DZINE-3.0/issues"
+  },
+  "keywords": [
+    "ai-design",
+    "design-system",
+    "design-tokens",
+    "frontend",
+    "agent",
+    "html",
+    "audit",
+    "taste"
+  ],
+  "type": "module",
+  "bin": {
+    "dzine": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "dzine/brand",
+    "dzine/pages",
+    "dzine/taste",
+    "dzine/theme.css",
+    "examples",
+    "recipes",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "D-ZINE_SPEC.md",
+    "FORMAT.md",
+    "QUALITY_BAR.md",
+    "README.md",
+    "RESEARCH_NOTES.md",
+    "ROADMAP.md",
+    "SECURITY.md",
+    "WEBSITE.md"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "test": "vitest run",
+    "check": "pnpm build && pnpm test",
+    "site:build": "node dist/cli/index.js site build --config dzine.config.json --out website",
+    "site:audit": "node dist/cli/index.js site audit --config dzine.config.json --out reports/website/site-audit --port 6200",
+    "taste:audit": "node dist/cli/index.js taste audit dzine/pages/home.dzine.html --profile dzine-launch --out reports/website/taste-home.md",
+    "release:verify": "pnpm check && pnpm site:build && pnpm site:audit && pnpm taste:audit",
+    "showcase:audit": "node dist/cli/index.js audit examples/showcase/dzine-3-showcase.dzine.html --visual --out reports/goal3/audit"
+  },
+  "dependencies": {
+    "node-html-parser": "^6.1.13",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "playwright": "^1.60.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

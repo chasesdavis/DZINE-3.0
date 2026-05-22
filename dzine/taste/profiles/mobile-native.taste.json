@@ -1,0 +1,37 @@
+{
+  "kind": "dzine.taste.profile",
+  "id": "mobile-native",
+  "name": "Mobile Native",
+  "version": "0.1.0",
+  "status": "seed",
+  "description": "A profile for mobile app flows that need platform awareness, touch ergonomics, readable state design, and real task completion.",
+  "extends": ["precision-product"],
+  "sources": ["canonical-design-systems", "product-pattern-libraries"],
+  "contracts": ["anti-slop", "typography", "layout-rhythm", "product-proof"],
+  "licenseNotes": "Use platform guidelines and product patterns as research. Do not copy app screens or proprietary flows.",
+  "allowedUse": ["mobile app flows", "native-feeling web apps", "responsive app surfaces"],
+  "principles": [
+    "Design for thumb reach, scan speed, state clarity, and interruption recovery.",
+    "A mobile surface should not feel like a squeezed desktop page.",
+    "Platform conventions matter: navigation, inputs, sheet behavior, and feedback should feel expected."
+  ],
+  "positiveExamples": ["Task-first mobile screens with obvious hierarchy.", "Stateful controls with loading, empty, error, focus, pressed, and success behavior."],
+  "antiPatterns": ["Desktop dashboards squeezed into phone width.", "Tiny tap targets.", "Unclear navigation stack.", "Marketing cards masquerading as app UI."],
+  "typographyRules": ["Use readable body sizes and avoid dense multi-column mobile layouts."],
+  "layoutRules": ["Single-column default, strong section chunking, stable controls, no horizontal overflow."],
+  "componentRules": ["Controls need at least 44px target size and visible pressed/focus states."],
+  "copyRules": ["Use task language and reduce ornamental copy."],
+  "screenshotNotes": ["Mobile screenshots are mandatory evidence for this profile."],
+  "rubric": {
+    "pass": 84,
+    "elite": 92,
+    "categories": [
+      { "id": "touch-ergonomics", "weight": 22 },
+      { "id": "state-completeness", "weight": 18 },
+      { "id": "platform-fit", "weight": 18 },
+      { "id": "readability", "weight": 16 },
+      { "id": "task-clarity", "weight": 16 },
+      { "id": "anti-slop", "weight": 10 }
+    ]
+  }
+}

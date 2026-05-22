@@ -1,0 +1,29 @@
+{
+  "file": "/Users/chase/Documents/DZINE 3.0/dzine/pages/docs.dzine.html",
+  "profile": "dzine-launch",
+  "score": 100,
+  "passed": true,
+  "level": "elite",
+  "findings": [],
+  "checks": {
+    "declaredProfile": "dzine-launch",
+    "sourceCount": 4,
+    "contractCount": 4,
+    "proofCount": 12,
+    "rhythmCount": 5,
+    "genericHits": [],
+    "fakeMetricHits": [],
+    "visibleSections": [
+      "overview",
+      "design-dna",
+      "tokens",
+      "recipes",
+      "components",
+      "anti-patterns",
+      "quality-gates"
+    ]
+  },
+  "recommendations": [
+    "ship"
+  ]
+}
