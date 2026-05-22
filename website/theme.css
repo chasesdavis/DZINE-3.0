@@ -892,10 +892,20 @@ section::after {
   .hero {
     min-height: auto;
     padding-top: 44px;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    display: none;
   }
 
   .hero-stage {
     min-height: auto;
+    overflow: hidden;
+  }
+
+  .product-window {
+    transform: none;
   }
 
   .stage-note {
@@ -968,6 +978,7 @@ section::after {
     right: auto;
     bottom: auto;
     width: 46%;
+    max-width: calc(100% - 32px);
     height: 360px;
     margin: -86px 16px 0 auto;
   }
