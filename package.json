@@ -50,7 +50,7 @@
     "test": "vitest run",
     "check": "pnpm build && pnpm test",
     "site:build": "node dist/cli/index.js site build --config dzine.config.json --out website",
-    "site:audit": "node dist/cli/index.js site audit --config dzine.config.json --out reports/website/site-audit --port 6200",
+    "site:audit": "node dist/cli/index.js site audit --config dzine.config.json --out reports/website/site-audit --port 6200 || (cat reports/website/site-audit/site-audit.md && exit 1)",
     "taste:audit": "node dist/cli/index.js taste audit dzine/pages/home.dzine.html --profile dzine-launch --out reports/website/taste-home.md",
     "release:verify": "pnpm check && pnpm site:build && pnpm site:audit && pnpm taste:audit",
     "showcase:audit": "node dist/cli/index.js audit examples/showcase/dzine-3-showcase.dzine.html --visual --out reports/goal3/audit"
