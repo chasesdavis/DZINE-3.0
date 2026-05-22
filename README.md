@@ -4,6 +4,9 @@ D-ZINE 3.0 is an AI-native design framework centered on `.dzine.html`: a rendera
 
 Markdown can be exported for compatibility, but `.dzine.html` is the source of truth.
 
+- Repository: https://github.com/chasesdavis/DZINE-3.0
+- Website: https://chasesdavis.github.io/DZINE-3.0/
+
 ## What This Implements
 
 - TypeScript runtime schemas for D-ZINE briefs, design DNA, tokens, recipes, components, motion, accessibility, anti-patterns, rubrics, and acceptance gates
@@ -171,7 +174,9 @@ See [WEBSITE.md](./WEBSITE.md) for the dogfooding proof commands and generated r
 
 ## GitHub Pages
 
-The repo includes `.github/workflows/pages.yml`, which runs `pnpm release:verify`, uploads the generated [website](./website), and deploys it with GitHub Pages. In GitHub, set Pages source to **GitHub Actions** for the repository.
+The repo includes `.github/workflows/pages.yml`, which runs `pnpm release:verify`, uploads the generated [website](./website), and deploys it with GitHub Pages.
+
+Live website: https://chasesdavis.github.io/DZINE-3.0/
 
 ## Source Docs
 

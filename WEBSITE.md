@@ -2,6 +2,10 @@
 
 The public product website is now generated from the D-ZINE site system, not maintained as one monolithic HTML file.
 
+Live site: https://chasesdavis.github.io/DZINE-3.0/
+
+Repository: https://github.com/chasesdavis/DZINE-3.0
+
 ## Source Of Truth
 
 ```text
@@ -129,9 +133,10 @@ reports/website/taste-showcase.md
 
 Publish the generated `website/` directory through GitHub Pages or any static host. The repo includes `.github/workflows/pages.yml`, which verifies the package and uploads `website/` as the Pages artifact.
 
-For GitHub Pages:
+GitHub Pages is enabled for this repo with the GitHub Actions build type:
 
-1. Push the repo to GitHub.
-2. In repository settings, set Pages source to **GitHub Actions**.
-3. Confirm `dzine.config.json` has the correct `github.owner`, `github.repo`, and `github.url` so the stars pill counts the right repo.
-4. Push to `main` or run the Pages workflow manually.
+```text
+https://chasesdavis.github.io/DZINE-3.0/
+```
+
+When moving to a different repo, update `dzine.config.json`, set Pages source to **GitHub Actions**, and run the Pages workflow from `main`.
