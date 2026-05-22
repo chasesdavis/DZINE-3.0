@@ -10,13 +10,14 @@
 - [x] Run `node dist/cli/index.js site audit --config dzine.config.json --out reports/website/site-audit --port 6200`.
 - [x] Run taste audits for all page sources.
 - [x] Review generated website screenshots.
-- [ ] Create first GitHub release tag.
+- [x] Create first GitHub release tag: `v0.1.0`.
 - [x] Enable GitHub Pages for the generated `website/` output.
 
 ## Public URLs
 
 - Repository: https://github.com/chasesdavis/DZINE-3.0
 - Website: https://chasesdavis.github.io/DZINE-3.0/
+- Release: https://github.com/chasesdavis/DZINE-3.0/releases/tag/v0.1.0
 
 ## Launch Proof
 
